@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Hydrotherapy Division — Auro Corporation | Advanced Aquatic Rehabilitation &amp; Thermal Recovery</title>
+  <meta name="description" content="Auro Corporation Hydrotherapy Division engineers clinical underwater treadmills, contrast therapy pools, and turnkey aquatic rehabilitation systems for elite sports and hospitals.">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet & Division Specific Styles -->
+  <link rel="stylesheet" href="css/styles.css?v=6.1">
+  <link rel="stylesheet" href="css/divisions.css?v=1.0">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- ==========================================================================
+         1. NAVIGATION HEADER
+         ========================================================================== -->
+    <header class="navbar" id="siteNavbar">
+      <a class="navbar__brand" href="index.html#home" aria-label="AuraCorp home">
+        <span class="navbar__brand-mark" aria-hidden="true"><i></i></span>
+        <span class="navbar__wordmark">AURA<span>CORP</span><small>HEALTHCARE &amp; WELLNESS</small></span>
+      </a>
+      <nav class="navbar__links" id="primaryNav" aria-label="Primary navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About us</a>
+        <div class="navbar__division-menu" id="navDivisionMenu">
+          <button class="navbar__division-trigger" id="navDivisionTrigger" type="button" aria-expanded="false" aria-controls="divisionSubmenu">
+            Divisions <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="navbar__submenu" id="divisionSubmenu" hidden>
+            <a href="medical.html">✚ Medical Division</a>
+            <a href="hydrotherapy.html" style="color:#38e1d5; font-weight:700;">≈ Hydrotherapy Division</a>
+          </div>
+        </div>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#why-us">Why AuraCorp</a>
+        <a href="index.html#insights">Insights</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="btn-cyan-pill" style="padding: 8px 18px; font-size: 0.8125rem; background:linear-gradient(100deg, #0caeaa, #14b8a6);" onclick="openHydroModal('Turnkey Aquatic Facility Consultation')">
+          Consult Experts <span aria-hidden="true">↗</span>
+        </button>
+        <button class="navbar__menu-toggle" id="navbarMenuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ==========================================================================
+           2. HYDROTHERAPY HERO SECTION
+           ========================================================================== -->
+      <section class="division-hero division-hero--hydro" id="overview">
+        <div class="division-hero__bg-wrap" aria-hidden="true">
+          <img class="division-hero__bg-img" src="/images/products/hydrotherapy-pool.webp" alt="Hydrotherapy Division Advanced Aquatic Rehabilitation Pool">
+        </div>
+        <div class="division-hero__overlay" aria-hidden="true"></div>
+
+        <div class="container">
+          <div class="division-hero__content">
+            <div class="division-breadcrumb">
+              <a href="index.html">Auro Corporation</a>
+              <span class="separator">/</span>
+              <a href="index.html#divisions">Divisions</a>
+              <span class="separator">/</span>
+              <span style="color:#ffffff;">Hydrotherapy Division</span>
+            </div>
+
+            <div class="division-hero__badge">
+              <span class="division-hero__badge-dot"></span>
+              AuroCorp Division 02 // Aquatic Rehabilitation &amp; Thermal Wellness
+            </div>
+
+            <h1>Advanced Hydrotherapy Systems &amp;<br><em>Therapeutic Recovery Pools</em></h1>
+            <p class="division-hero__lead">
+              Pioneering clinical underwater treadmills, sensory contrast plunge pools, and kinetic buoyant rehabilitation suites. We deliver end-to-end turnkey architectural integration for high-performance sports hubs, orthopedic hospitals, and premier wellness resorts.
+            </p>
+
+            <div class="division-hero__cta-group">
+              <button class="btn-cyan-pill" style="padding: 12px 28px; font-size: 0.9375rem; background:linear-gradient(100deg, #0caeaa, #14b8a6);" onclick="openHydroModal('Turnkey Aquatic Architectural Specs & CAD Proposal')">
+                Request Architectural Specs (CAD/PDF)
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+              <a href="#systems" class="btn-white-pill" style="padding: 12px 24px; font-size: 0.9375rem;">
+                Explore Aquatic Systems
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </a>
+            </div>
+
+            <div class="division-hero__stats-row">
+              <div class="division-stat-box">
+                <div class="division-stat-box__val">35<span>+</span></div>
+                <div class="division-stat-box__label">Turnkey Aquatic Installations Executed</div>
+              </div>
+              <div class="division-stat-box">
+                <div class="division-stat-box__val">85<span>%</span></div>
+                <div class="division-stat-box__label">Bodyweight Reduction with Buoyancy Protocols</div>
+              </div>
+              <div class="division-stat-box">
+                <div class="division-stat-box__val">316<span>L</span></div>
+                <div class="division-stat-box__label">Marine Surgical Grade Antimicrobial Stainless Steel</div>
+              </div>
+              <div class="division-stat-box">
+                <div class="division-stat-box__val">100<span>%</span></div>
+                <div class="division-stat-box__label">Ozone &amp; UV Micro-Filtration Automated Sanitation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           3. DIVISION STICKY QUICK NAVIGATION
+           ========================================================================== -->
+      <nav class="division-subnav" aria-label="Division In-Page Navigation">
+        <div class="container">
+          <div class="division-subnav__list">
+            <a href="#overview" class="division-subnav__link active">Overview</a>
+            <a href="#science" class="division-subnav__link">Therapeutic Science</a>
+            <a href="#systems" class="division-subnav__link">Flagship Systems</a>
+            <a href="#workflow" class="division-subnav__link">Turnkey Execution</a>
+            <a href="#applications" class="division-subnav__link">Sectors &amp; Use Cases</a>
+            <a href="#case-study" class="division-subnav__link">Sports Case Study</a>
+            <a href="#consultation" class="division-subnav__link">Book Consultation</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ==========================================================================
+           4. SCIENTIFIC RECOVERY FOUNDATION
+           ========================================================================== -->
+      <section class="division-section" id="science">
+        <div class="container">
+          <div class="overview-grid">
+            <div>
+              <span class="eyebrow-gold" style="color:#0f766e;">CLINICAL BIOMECHANICS</span>
+              <h2 class="section-serif-heading" style="font-size: clamp(2rem, 3.2vw, 2.75rem); margin: 0.75rem 0 1.25rem;">
+                The Science of Buoyancy, Hydrodynamics &amp; Thermal Recovery.
+              </h2>
+              <p style="color:#64748b; line-height:1.75; font-size:1.025rem;">
+                Water is an extraordinary rehabilitation medium. When engineered with precision temperature control, laminarly directed resistance currents, and adjustable depth platforms, hydrotherapy accelerates neuromuscular healing without bearing painful joint stress.
+              </p>
+
+              <div class="overview-features-list">
+                <div class="overview-feature-item">
+                  <div class="overview-feature-icon" style="background:#ecfdf5; border-color:#a7f3d0; color:#059669;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                  </div>
+                  <div>
+                    <h4>Unweighted Buoyancy Gait Training</h4>
+                    <p>Water immersion up to the chest offloads up to 80–90% of dynamic skeletal body weight, enabling early post-surgical walking and gait re-education.</p>
+                  </div>
+                </div>
+
+                <div class="overview-feature-item">
+                  <div class="overview-feature-icon" style="background:#ecfdf5; border-color:#a7f3d0; color:#059669;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+                  </div>
+                  <div>
+                    <h4>Hydrostatic Pressure &amp; Edema Drainage</h4>
+                    <p>Uniform fluid compression enhances venous return, reduces chronic inflammation and limb swelling, and accelerates lymphatic metabolic clearance.</p>
+                  </div>
+                </div>
+
+                <div class="overview-feature-item">
+                  <div class="overview-feature-icon" style="background:#ecfdf5; border-color:#a7f3d0; color:#059669;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+                  </div>
+                  <div>
+                    <h4>Contrast Temperature Vascular Pumping</h4>
+                    <p>Alternating between regulated cold plunges (4°C–10°C) and hot thermal hydrotherapy (38°C) stimulates rapid vasoconstriction and vasodilation for muscle flush.</p>
+                  </div>
+                </div>
+
+                <div class="overview-feature-item">
+                  <div class="overview-feature-icon" style="background:#ecfdf5; border-color:#a7f3d0; color:#059669;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></svg>
+                  </div>
+                  <div>
+                    <h4>Smooth Hydrodynamic Kinetic Resistance</h4>
+                    <p>Resistance scales naturally with patient velocity: double the movement speed generates quadruple the resistance with zero harsh deceleration shock.</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn-navy-pill" onclick="openHydroModal('Hydrotherapy Scientific Biomechanics Protocol Guide')">
+                Download Biomechanics Clinical Guide
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+
+            <div class="overview-visual">
+              <img src="/images/products/hydrotherapy-pool.webp" alt="Turnkey Hydrotherapy Rehabilitation Suite">
+              <div class="overview-visual__badge">
+                <div class="overview-badge-icon" style="background:rgba(12,174,170,0.25); border-color:#0caeaa; color:#2dd4bf;">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div class="overview-badge-text">
+                  <h4>Turnkey 3D Engineering</h4>
+                  <p>Custom hydraulic layouts, structural slab weight planning, and automated chemical dosing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           5. FLAGSHIP HYDROTHERAPY SYSTEMS SHOWCASE
+           ========================================================================== -->
+      <section class="division-section division-section--alt" id="systems">
+        <div class="container">
+          <div class="division-sec-header">
+            <span class="eyebrow" style="color:#0d9488;">ENGINEERED HYDRO-SOLUTIONS</span>
+            <h2>Flagship Hydrotherapy Systems &amp; Pools</h2>
+            <p>From individual underwater treadmill chambers to large Olympic-grade contrast pools, each installation is custom-built with marine-grade materials.</p>
+          </div>
+
+          <!-- Systems Grid -->
+          <div class="catalog-grid">
+            <!-- System 1 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="/images/products/hydrotherapy-pool.webp" alt="AuroFlow Pro Underwater Treadmill">
+                <span class="product-badge-tag tag-hot" style="background:#0caeaa; color:#fff;">FLAGSHIP REHAB</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SYSTEM: AF-TREAD-PRO</span>
+                  <span style="color:#0d9488;">Kinetic Gait Therapy</span>
+                </div>
+                <h3 class="product-spec-title">AuroFlow Pro Clinical Underwater Treadmill Chamber</h3>
+                <p class="product-spec-desc">Motorized aquatic walking and running treadmill with variable depth controls, high-impact glass diagnostic viewport, and therapist telemetry console.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Speed Range</td>
+                    <td>0.2 to 12.0 km/h (0.1 km/h increments)</td>
+                  </tr>
+                  <tr>
+                    <td>Water Depth</td>
+                    <td>Variable 0.4m to 1.35m automated</td>
+                  </tr>
+                  <tr>
+                    <td>Diagnostic View</td>
+                    <td>Dual HD underwater gait analysis cameras</td>
+                  </tr>
+                  <tr>
+                    <td>Construction</td>
+                    <td>AISI 316L Stainless Steel + Tempered Glass</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" style="background:#0f766e;" onclick="openHydroModal('AuroFlow Pro Underwater Treadmill')">Request System Proposal</button>
+                  <button class="btn-card-spec" title="Download System Specs" onclick="openHydroSpec('AuroFlow Pro Underwater Treadmill')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- System 2 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="assets/images/resonance.jpg" alt="AquaShield Dual Contrast Therapy Pool">
+                <span class="product-badge-tag tag-cert">SPORTS RECOVERY</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SYSTEM: AS-CONTRAST-2X</span>
+                  <span style="color:#0d9488;">Thermal Plunges</span>
+                </div>
+                <h3 class="product-spec-title">AquaShield Dual-Chamber Contrast Recovery Plunge</h3>
+                <p class="product-spec-desc">Twin stainless-steel plunge pools delivering ultra-cold (4°C–10°C) and soothing thermal immersion (38°C–40°C) with continuous ozone micro-filtration.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Cold Chamber Temp</td>
+                    <td>4°C to 10°C with rapid chiller core</td>
+                  </tr>
+                  <tr>
+                    <td>Warm Chamber Temp</td>
+                    <td>36°C to 40°C titanium heating loop</td>
+                  </tr>
+                  <tr>
+                    <td>Filtration Protocol</td>
+                    <td>Automated UV-C + Micro-Ozone Injection</td>
+                  </tr>
+                  <tr>
+                    <td>Capacity</td>
+                    <td>2 to 6 Athletes simultaneous per pool</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" style="background:#0f766e;" onclick="openHydroModal('AquaShield Dual Contrast Therapy Plunge')">Request System Proposal</button>
+                  <button class="btn-card-spec" title="Download System Specs" onclick="openHydroSpec('AquaShield Dual Contrast Therapy Plunge')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- System 3 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="/images/products/hydrotherapy-pool.webp" alt="Spinal Buoyancy Decompression Chamber">
+                <span class="product-badge-tag">NEURO &amp; ORTHO</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SYSTEM: SB-POD-100</span>
+                  <span style="color:#0d9488;">Decompression</span>
+                </div>
+                <h3 class="product-spec-title">SpineBuoyant Orthopedic Aquatic Decompression Pod</h3>
+                <p class="product-spec-desc">Specialized zero-gravity buoyancy pod equipped with 18 target hydraulic massage nozzles for lower back pain, disc herniation, and spinal recovery.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Hydro-Jets</td>
+                    <td>18 directional pulsation nozzles</td>
+                  </tr>
+                  <tr>
+                    <td>Water Temperature</td>
+                    <td>Constant 34°C (Thermoneutral comfort)</td>
+                  </tr>
+                  <tr>
+                    <td>Accessibility</td>
+                    <td>Integrated hoist &amp; ramp compatible</td>
+                  </tr>
+                  <tr>
+                    <td>Control Console</td>
+                    <td>Waterproof touch pad with preset therapy</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" style="background:#0f766e;" onclick="openHydroModal('SpineBuoyant Aquatic Decompression Pod')">Request System Proposal</button>
+                  <button class="btn-card-spec" title="Download System Specs" onclick="openHydroSpec('SpineBuoyant Aquatic Decompression Pod')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- System 4 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="assets/images/resonance.jpg" alt="Counter-Current Swim Rehabilitation Channel">
+                <span class="product-badge-tag tag-hot" style="background:#0caeaa; color:#fff;">KINETIC SWIM</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SYSTEM: AJ-SWIM-450</span>
+                  <span style="color:#0d9488;">Endurance Rehab</span>
+                </div>
+                <h3 class="product-spec-title">AuroJet Laminar Counter-Current Swim Channel</h3>
+                <p class="product-spec-desc">Smooth, deep-water laminar flow propulsion system delivering steady water velocity without bubbles or turbulence for stroke, cardio, and triathlon conditioning.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Propulsion System</td>
+                    <td>Heavy-duty hydraulic laminar impeller</td>
+                  </tr>
+                  <tr>
+                    <td>Current Velocity</td>
+                    <td>Up to 4.5 meters/second adjustable</td>
+                  </tr>
+                  <tr>
+                    <td>Water Flow Volume</td>
+                    <td>Up to 1,800 m³/hour continuous stream</td>
+                  </tr>
+                  <tr>
+                    <td>Pacing Guide</td>
+                    <td>Submersible underwater LED pace track</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" style="background:#0f766e;" onclick="openHydroModal('AuroJet Counter-Current Swim Channel')">Request System Proposal</button>
+                  <button class="btn-card-spec" title="Download System Specs" onclick="openHydroSpec('AuroJet Counter-Current Swim Channel')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- System 5 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="/images/products/hydrotherapy-pool.webp" alt="Sensory Acoustic Hydro Lounger">
+                <span class="product-badge-tag tag-cert">SPA &amp; WELLNESS</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SYSTEM: SL-AQUA-600</span>
+                  <span style="color:#0d9488;">Sensory Therapy</span>
+                </div>
+                <h3 class="product-spec-title">SensoryWave Acoustic Immersion Hydro-Spa Lounger</h3>
+                <p class="product-spec-desc">Submerged ergonomic lounger integrating low-frequency acoustic transducers and chromotherapy LED spectrums for deep neurological parasympathetic recovery.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Acoustic Healing</td>
+                    <td>Underwater vibro-acoustic bone conduction</td>
+                  </tr>
+                  <tr>
+                    <td>Chromotherapy</td>
+                    <td>Full-spectrum RGB biological circadian LEDs</td>
+                  </tr>
+                  <tr>
+                    <td>Massage Zones</td>
+                    <td>Cervical, lumbar, calf hydro-stimulation</td>
+                  </tr>
+                  <tr>
+                    <td>Material</td>
+                    <td>Bio-inert antimicrobial composite acrylic</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" style="background:#0f766e;" onclick="openHydroModal('SensoryWave Acoustic Hydro Lounger')">Request System Proposal</button>
+                  <button class="btn-card-spec" title="Download System Specs" onclick="openHydroSpec('SensoryWave Acoustic Hydro Lounger')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- System 6 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="assets/images/resonance.jpg" alt="Turnkey Hydrotherapy Basin">
+                <span class="product-badge-tag">FULL ARCHITECTURAL</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SYSTEM: TK-BASIN-CUSTOM</span>
+                  <span style="color:#0d9488;">Turnkey Build</span>
+                </div>
+                <h3 class="product-spec-title">Custom Modular Hydrotherapy Rehabilitation Basin</h3>
+                <p class="product-spec-desc">Complete custom-sized aquatic pools with movable floor platform, access ramps, handrails, filtration plant room, and automated temperature management.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Custom Sizing</td>
+                    <td>From 4m x 3m up to 15m x 8m Olympic specs</td>
+                  </tr>
+                  <tr>
+                    <td>Movable Floor</td>
+                    <td>Optional automated hydraulic depth variation</td>
+                  </tr>
+                  <tr>
+                    <td>Plant Room</td>
+                    <td>Self-contained skid-mounted pump &amp; filtration</td>
+                  </tr>
+                  <tr>
+                    <td>Certification</td>
+                    <td>Compliant with global aquatic therapy codes</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" style="background:#0f766e;" onclick="openHydroModal('Custom Modular Hydrotherapy Basin')">Request Turnkey Proposal</button>
+                  <button class="btn-card-spec" title="Download System Specs" onclick="openHydroSpec('Custom Modular Hydrotherapy Basin')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           6. END-TO-END TURNKEY EXECUTION WORKFLOW
+           ========================================================================== -->
+      <section class="division-section division-section--dark" id="workflow">
+        <div class="container">
+          <div class="division-sec-header dark">
+            <span class="eyebrow" style="color:#2dd4bf;">SEAMLESS ARCHITECTURAL DELIVERY</span>
+            <h2>Turnkey Engineering &amp; Project Execution</h2>
+            <p>We work hand-in-hand with hospital architects, facility managers, and sports scientists from blueprinted concept to operational ribbon-cutting.</p>
+          </div>
+
+          <div class="turnkey-grid">
+            <div class="turnkey-step" style="background:#0b1d2e; border-color:rgba(45,212,191,0.2);">
+              <span class="turnkey-step__num" style="color:#2dd4bf;">PHASE 01</span>
+              <h3 style="color:#ffffff;">Spatial &amp; Hydraulic Audit</h3>
+              <p style="color:#94a3b8;">Floor load bearing capacity, ceiling clearance, and plumbing inlet/drainage feasibility calculations.</p>
+            </div>
+
+            <div class="turnkey-step" style="background:#0b1d2e; border-color:rgba(45,212,191,0.2);">
+              <span class="turnkey-step__num" style="color:#2dd4bf;">PHASE 02</span>
+              <h3 style="color:#ffffff;">3D CAD &amp; BIM Blueprint</h3>
+              <p style="color:#94a3b8;">Architectural drafting with detailed plant room piping, electrical load distribution, and patient flow paths.</p>
+            </div>
+
+            <div class="turnkey-step" style="background:#0b1d2e; border-color:rgba(45,212,191,0.2);">
+              <span class="turnkey-step__num" style="color:#2dd4bf;">PHASE 03</span>
+              <h3 style="color:#ffffff;">Precision Fabrication</h3>
+              <p style="color:#94a3b8;">Laser-cut 316L marine stainless-steel vessel welding, viewport sealing, and sensor wiring at our partner facility.</p>
+            </div>
+
+            <div class="turnkey-step" style="background:#0b1d2e; border-color:rgba(45,212,191,0.2);">
+              <span class="turnkey-step__num" style="color:#2dd4bf;">PHASE 04</span>
+              <h3 style="color:#ffffff;">On-Site Civil &amp; Wet Testing</h3>
+              <p style="color:#94a3b8;">Delivery, mechanical rigging, water pressure balancing, thermal stability validation, and ozone calibration.</p>
+            </div>
+
+            <div class="turnkey-step" style="background:#0b1d2e; border-color:rgba(45,212,191,0.2);">
+              <span class="turnkey-step__num" style="color:#2dd4bf;">PHASE 05</span>
+              <h3 style="color:#ffffff;">Staff Clinical Training</h3>
+              <p style="color:#94a3b8;">Certified training on patient safety protocols, hydro-exercise prescriptions, and chemical maintenance SLAs.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           7. TARGET SECTORS & APPLICATIONS
+           ========================================================================== -->
+      <section class="division-section" id="applications">
+        <div class="container">
+          <div class="division-sec-header">
+            <span class="eyebrow" style="color:#0d9488;">SPECIALIZED DEPLOYMENT</span>
+            <h2>Who We Build Hydrotherapy Facilities For</h2>
+            <p>Our installations are customized to meet the distinct operational and clinical requirements of diverse institutions.</p>
+          </div>
+
+          <div class="compliance-grid">
+            <div class="compliance-card" style="background:#ffffff; border:1px solid #e2e8f0; box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+              <div class="compliance-icon" style="background:#f0fdfa; border-color:#99f6e4; color:#0f766e;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+              </div>
+              <h3 style="color:#0f172a;">Elite Sports &amp; Olympic Hubs</h3>
+              <p style="color:#64748b;">Rapid lactic acid flushing, game-day contrast plunging, and accelerated return-to-play kinetic conditioning.</p>
+            </div>
+
+            <div class="compliance-card" style="background:#ffffff; border:1px solid #e2e8f0; box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+              <div class="compliance-icon" style="background:#f0fdfa; border-color:#99f6e4; color:#0f766e;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h3 style="color:#0f172a;">Orthopedic &amp; Spine Hospitals</h3>
+              <p style="color:#64748b;">Zero-impact post-operative joint arthroplasty recovery, spinal decompression, and muscular symmetry rehab.</p>
+            </div>
+
+            <div class="compliance-card" style="background:#ffffff; border:1px solid #e2e8f0; box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+              <div class="compliance-icon" style="background:#f0fdfa; border-color:#99f6e4; color:#0f766e;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <h3 style="color:#0f172a;">Neuro-Rehabilitation Centers</h3>
+              <p style="color:#64748b;">Safe vestibular balance rebuilding, stroke hemiplegia gait recovery, and cerebral palsy sensory stimulation.</p>
+            </div>
+
+            <div class="compliance-card" style="background:#ffffff; border:1px solid #e2e8f0; box-shadow:0 6px 18px rgba(0,0,0,0.04);">
+              <div class="compliance-icon" style="background:#f0fdfa; border-color:#99f6e4; color:#0f766e;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21a9 9 0 0 0 9-9c0-4.97-4.03-9-9-9s-9 4.03-9 9a9 9 0 0 0 9 9z"/><path d="M12 7v5l3 3"/></svg>
+              </div>
+              <h3 style="color:#0f172a;">Luxury Wellness Sanatoriums</h3>
+              <p style="color:#64748b;">Sensory isolation baths, anti-stress vibro-acoustic loungers, and thermal circadian spa rejuvenation suites.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           8. SPORTS RECOVERY CASE STUDY
+           ========================================================================== -->
+      <section class="division-section division-section--alt" id="case-study">
+        <div class="container">
+          <div class="case-study-card">
+            <div class="case-study-content">
+              <span class="case-study-tag" style="color:#0d9488;">HIGH PERFORMANCE SPORTS CASE STUDY</span>
+              <h3>Accelerating Post-ACL Reconstruction Rehabilitation by 34% at a National Athletic Training Center</h3>
+              <p>
+                A premier sports institute integrated the AuroFlow Pro Underwater Treadmill and dual AquaShield Contrast Plunge systems into their physiotherapy wing. Athletes initiated unweighted closed-kinetic chain gait drills within 12 days post-op instead of the customary 6 weeks on dry land.
+              </p>
+
+              <div class="case-study-stats">
+                <div class="case-study-stat-item">
+                  <h4>34<span>%</span></h4>
+                  <p>Faster Return to Active High-Intensity Training</p>
+                </div>
+                <div class="case-study-stat-item">
+                  <h4>0<span> Shock</span></h4>
+                  <p>Impact-Free Proprioceptive Joint Feedback</p>
+                </div>
+                <div class="case-study-stat-item">
+                  <h4>98.5<span>%</span></h4>
+                  <p>Athlete Satisfaction in Contrast Flushes</p>
+                </div>
+              </div>
+
+              <div>
+                <button class="btn-navy-pill" onclick="openHydroModal('National Athletic Training Center Case Study Report')">
+                  Download Aquatic Case Study (PDF)
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="case-study-visual">
+              <img src="/images/products/hydrotherapy-pool.webp" alt="High Performance Sports Hydrotherapy Case Study">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           9. SISTER VERTICAL SWITCHER STRIP
+           ========================================================================== -->
+      <div class="division-switcher-strip">
+        <div class="container switcher-inner">
+          <div class="switcher-info">
+            <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.15em; color:var(--cyan-light); font-weight:800;">EXPLORE OUR SISTER VERTICAL</span>
+            <h3>Looking for Diagnostic &amp; Surgical Medical Supplies?</h3>
+            <p>Discover our certified patient monitors, OT lights, ventilators, and sterile consumables in Division 01.</p>
+          </div>
+          <div class="switcher-actions">
+            <a href="medical.html" class="btn-cyan-pill" style="padding:10px 22px; font-size:0.875rem;">
+              View Medical Division
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+           10. TURNKEY PROPOSAL BANNER
+           ========================================================================== -->
+      <section class="cta-banner-section" id="consultation" style="background: linear-gradient(135deg, #041c2c 0%, #083344 50%, #0d4a5e 100%);">
+        <div class="container cta-banner-inner">
+          <div>
+            <h2 class="cta-heading">Plan Your Custom Hydrotherapy Facility</h2>
+            <p class="cta-subtext">Connect with our aquatic engineering specialists for 3D space assessment, equipment specs, and budgetary proposals.</p>
+          </div>
+          <div>
+            <button class="btn-white-pill" style="padding:0.85rem 2rem; font-size:0.9375rem;" onclick="openHydroModal('Custom Hydrotherapy Facility Consultation')">
+              Book Engineering Consultation
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================================================
+         11. COMPREHENSIVE FOOTER
+         ========================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top-grid">
+          <!-- Col 1 -->
+          <div>
+            <a href="index.html#home" class="navbar__brand footer__brand" aria-label="AuraCorp home">
+              <span class="navbar__brand-mark" aria-hidden="true"><i></i></span>
+              <span class="navbar__wordmark">AURA<span>CORP</span><small>HEALTHCARE &amp; WELLNESS</small></span>
+            </a>
+            <p class="footer-brand-desc">
+              Hydrotherapy Division: Designing state-of-the-art aquatic rehabilitation systems, underwater treadmills, and therapeutic contrast recovery chambers.
+            </p>
+            <div class="footer-social-row">
+              <a href="#" class="social-round-btn" aria-label="LinkedIn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="social-round-btn" aria-label="Instagram">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2 -->
+          <div>
+            <h4 class="footer-col-header">Quick Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html">Main Homepage</a></li>
+              <li><a href="index.html#about">About Auro Corporation</a></li>
+              <li><a href="medical.html">Medical Division</a></li>
+              <li><a href="hydrotherapy.html">Hydrotherapy Division</a></li>
+              <li><a href="index.html#products">Products Overview</a></li>
+              <li><a href="index.html#contact">Corporate Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3 -->
+          <div>
+            <h4 class="footer-col-header">Aquatic Systems</h4>
+            <ul class="footer-links-list">
+              <li><a href="#systems">Underwater Treadmills</a></li>
+              <li><a href="#systems">Dual Contrast Therapy Plunges</a></li>
+              <li><a href="#systems">Spinal Decompression Pods</a></li>
+              <li><a href="#systems">Counter-Current Channels</a></li>
+              <li><a href="#workflow">3D Turnkey Engineering</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4 -->
+          <div>
+            <h4 class="footer-col-header">Contact &amp; Projects</h4>
+            <div class="footer-contact-details">
+              <div class="contact-row-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>+91 98765 43210</span>
+              </div>
+              <div class="contact-row-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span>hydro@aurocorporation.com</span>
+              </div>
+              <div class="contact-row-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Patna, Bihar, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 5 -->
+          <div class="footer-graphic-box">
+            <div class="footer-slogan-text" style="color:#2dd4bf;">
+              AQUATIC<br>
+              HEALING<br>
+              PRECISION<br>
+              ENGINEERING
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div>© 2026 AuraCorp — Hydrotherapy Division. All rights reserved.</div>
+          <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#overview" class="back-to-top-btn" aria-label="Back to top">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Interactive Hydrotherapy Consultation Modal -->
+  <div class="rfq-modal-overlay" id="hydroModalOverlay">
+    <div class="rfq-modal-card">
+      <div class="rfq-modal-header" style="background:#072130;">
+        <h3 id="hydroModalTitle" style="color:#ffffff;">Hydrotherapy Project Consultation</h3>
+        <button class="rfq-modal-close" onclick="closeHydroModal()">&times;</button>
+      </div>
+      <div class="rfq-modal-body">
+        <form onsubmit="handleHydroSubmit(event)">
+          <div class="rfq-form-group">
+            <label class="rfq-form-label">System or Facility Type</label>
+            <input type="text" class="rfq-form-input" id="hydroSystemInput" required>
+          </div>
+          <div class="rfq-form-group">
+            <label class="rfq-form-label">Facility / Organization Name</label>
+            <input type="text" class="rfq-form-input" placeholder="e.g. National Sports Institute / Olympic Rehab Wing" required>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+            <div class="rfq-form-group">
+              <label class="rfq-form-label">Lead Architect / Project Director</label>
+              <input type="text" class="rfq-form-input" placeholder="Full Name" required>
+            </div>
+            <div class="rfq-form-group">
+              <label class="rfq-form-label">Direct Contact Number / Email</label>
+              <input type="text" class="rfq-form-input" placeholder="+91 / email" required>
+            </div>
+          </div>
+          <div class="rfq-form-group">
+            <label class="rfq-form-label">Project Stage</label>
+            <select class="rfq-form-select">
+              <option>Concept &amp; Feasibility Exploration</option>
+              <option>Architectural Drawing &amp; BIM Phase</option>
+              <option>Under Construction / Civil Fitout</option>
+              <option>Retrofit of Existing Pool or Clinic</option>
+            </select>
+          </div>
+          <div class="rfq-form-group">
+            <label class="rfq-form-label">Room Dimensions &amp; Specific Therapy Needs</label>
+            <textarea class="rfq-form-textarea" placeholder="Approx room area (sq ft / m²), expected patient capacity, or specific temperature requirements..."></textarea>
+          </div>
+          <div style="display:flex; justify-content:flex-end; gap:1rem; margin-top:1.5rem;">
+            <button type="button" class="btn-card-quote" style="background:#e2e8f0; color:#334155;" onclick="closeHydroModal()">Cancel</button>
+            <button type="submit" class="btn-cyan-pill" style="padding:10px 22px; background:linear-gradient(100deg, #0caeaa, #14b8a6);">Submit Project Brief</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="toast-msg"></div>
+
+  <script type="module" src="/js/main.js"></script>
+  <script>
+    function openHydroModal(systemName) {
+      const overlay = document.getElementById('hydroModalOverlay');
+      const input = document.getElementById('hydroSystemInput');
+      const title = document.getElementById('hydroModalTitle');
+      if (overlay) {
+        if (input) input.value = systemName || 'Turnkey Hydrotherapy Facility';
+        if (title) title.textContent = `Consultation — ${systemName || 'Hydrotherapy Division'}`;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeHydroModal() {
+      const overlay = document.getElementById('hydroModalOverlay');
+      if (overlay) {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function handleHydroSubmit(e) {
+      e.preventDefault();
+      closeHydroModal();
+      const ref = 'HYDRO-' + Math.floor(10000 + Math.random() * 90000);
+      showToast(`Project Consultation received! Our aquatic engineering team will contact you within 24h. Ref: ${ref}`);
+    }
+
+    function openHydroSpec(systemName) {
+      showToast(`Preparing CAD & Engineering spec sheet for "${systemName}"... PDF download started.`);
+    }
+
+    // In-page subnav active link on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.division-subnav__link');
+      let current = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 120;
+        if (window.scrollY >= top) {
+          current = sec.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <!-- Clean Split Hero Backdrop Active -->
+  <title>AuraCorp — Quality Products for Healthcare &amp; Wellness</title>
+  <meta name="description" content="A diversified trading company with a strong presence across Medical and Resonance divisions, bringing trusted products, reliable partnerships and long-term value.">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheet with Cache Buster -->
+  <link rel="stylesheet" href="css/styles.css?v=6.1">
+</head>
+<body>
+  <!-- ==========================================================================
+       DOUBLE STAIRS PRELOADER
+       Dual-direction staircase curtain animation with central brand identity
+       ========================================================================== -->
+  <div class="skiper10-preloader" id="skiper10Preloader" aria-hidden="true">
+    <!-- Top Stair Columns (Slide UP) -->
+    <div class="stair-half top-stairs">
+      <div class="stair-col" style="--stair-i: 0;"></div>
+      <div class="stair-col" style="--stair-i: 1;"></div>
+      <div class="stair-col" style="--stair-i: 2;"></div>
+      <div class="stair-col" style="--stair-i: 3;"></div>
+      <div class="stair-col" style="--stair-i: 4;"></div>
+      <div class="stair-col" style="--stair-i: 5;"></div>
+    </div>
+
+    <!-- Center Brand & Counter Block -->
+    <div class="preloader-center-content" id="preloaderCenterContent">
+      <div class="preloader-brand-mark" aria-hidden="true"></div>
+      <div class="preloader-title-wrap">
+        <h2 class="preloader-title" style="letter-spacing:0.04em;">AURA<span style="font-weight:400; margin-left:3px;">CORP</span></h2>
+        <p class="preloader-subtitle" style="letter-spacing:0.18em;">HEALTHCARE &amp; WELLNESS</p>
+      </div>
+      <div class="preloader-progress-wrap">
+        <div class="preloader-progress-bar">
+          <div class="preloader-progress-fill" id="preloaderProgressFill"></div>
+        </div>
+        <div class="preloader-counter" id="preloaderCounter">00%</div>
+      </div>
+    </div>
+
+    <!-- Bottom Stair Columns (Slide DOWN) -->
+    <div class="stair-half bottom-stairs">
+      <div class="stair-col" style="--stair-i: 0;"></div>
+      <div class="stair-col" style="--stair-i: 1;"></div>
+      <div class="stair-col" style="--stair-i: 2;"></div>
+      <div class="stair-col" style="--stair-i: 3;"></div>
+      <div class="stair-col" style="--stair-i: 4;"></div>
+      <div class="stair-col" style="--stair-i: 5;"></div>
+    </div>
+  </div>
+
+  <div class="site-wrapper">
+
+  <!-- ==========================================================================
+       1. NAVIGATION HEADER
+       ========================================================================== -->
+  <header class="navbar" id="siteNavbar">
+    <a class="navbar__brand" href="#home" aria-label="AuraCorp home">
+      <span class="navbar__brand-mark" aria-hidden="true"><i></i></span>
+      <span class="navbar__wordmark">AURA<span>CORP</span><small>HEALTHCARE &amp; WELLNESS</small></span>
+    </a>
+    <nav class="navbar__links" id="primaryNav" aria-label="Primary navigation">
+      <a href="#home" class="is-active">Home</a>
+      <a href="#about">About us</a>
+      <div class="navbar__division-menu" id="navDivisionMenu">
+        <button class="navbar__division-trigger" id="navDivisionTrigger" type="button" aria-expanded="false" aria-controls="divisionSubmenu">
+          Divisions <span aria-hidden="true">⌄</span>
+        </button>
+        <div class="navbar__submenu" id="divisionSubmenu" hidden>
+          <a href="medical.html">✚ Medical Division</a>
+          <a href="hydrotherapy.html">≈ Hydrotherapy Division</a>
+        </div>
+      </div>
+      <a href="#products">Products</a>
+      <a href="#why-us">Why AuraCorp</a>
+      <a href="#insights">Insights</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="navbar__actions">
+      <a class="navbar__contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      <button class="navbar__menu-toggle" id="navbarMenuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__image" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 760px)" srcset="/images/hero/aura-healthcare-mobile.webp">
+          <img src="/images/hero/aura-healthcare-hero.webp" alt="AuraCorp Healthcare &amp; Wellness" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__center-panel" aria-hidden="true"></div>
+      <div class="hero__content">
+        <span class="hero__kicker">Global trade. Better tomorrows.</span>
+        <h1 id="hero-title">Quality products for<br><em><span class="petal-dissolve-target" data-petal-id="hero">healthcare &amp; wellness</span></em></h1>
+        <p>We connect care providers with trusted medical products and advanced hydrotherapy solutions.</p>
+        <a class="button button--bright" href="#products">Explore products <span aria-hidden="true">→</span></a>
+      </div>
+      <a class="hero__division hero__division--medical" href="medical.html">
+        <span class="hero__division-icon" aria-hidden="true">✚</span>
+        <span><b>Medical Division</b><small>Reliable products for better care.</small><i>Explore medical <span aria-hidden="true">→</span></i></span>
+      </a>
+      <a class="hero__division hero__division--hydro" href="hydrotherapy.html">
+        <span class="hero__division-icon" aria-hidden="true">≈</span>
+        <span><b>Hydrotherapy Division</b><small>Solutions for healing and recovery.</small><i>Explore hydrotherapy <span aria-hidden="true">→</span></i></span>
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         3. STATS / METRICS BAR
+         ========================================================================== -->
+    <section class="stats-bar-section" aria-label="Key Performance Metrics">
+      <div class="container">
+        <div class="stats-bar-grid">
+          <!-- Stat 1 -->
+          <div class="stat-item-card scroll-reveal" style="--stagger-delay: 0.05s;">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" x2="12" y1="22.08" y2="12"/></svg>
+            </div>
+            <div>
+              <div class="stat-value" data-count-to="10" data-suffix="+">10+</div>
+              <div class="stat-label">Associated Companies</div>
+            </div>
+          </div>
+          <!-- Stat 2 -->
+          <div class="stat-item-card scroll-reveal" style="--stagger-delay: 0.12s;">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="8" height="8" x="2" y="2" rx="1.5"/><rect width="8" height="8" x="14" y="2" rx="1.5"/><rect width="8" height="8" x="14" y="14" rx="1.5"/><rect width="8" height="8" x="2" y="14" rx="1.5"/></svg>
+            </div>
+            <div>
+              <div class="stat-value" data-count-to="500" data-suffix="+">500+</div>
+              <div class="stat-label">Product Categories</div>
+            </div>
+          </div>
+          <!-- Stat 3 -->
+          <div class="stat-item-card scroll-reveal" style="--stagger-delay: 0.19s;">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <div class="stat-value" data-count-to="20" data-suffix="+">20+</div>
+              <div class="stat-label">Global Partners</div>
+            </div>
+          </div>
+          <!-- Stat 4 -->
+          <div class="stat-item-card scroll-reveal" style="--stagger-delay: 0.26s;">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="stat-value" data-count-to="15" data-suffix="+">15+</div>
+              <div class="stat-label">Countries Served</div>
+            </div>
+          </div>
+          <!-- Stat 5 -->
+          <div class="stat-item-card scroll-reveal" style="--stagger-delay: 0.33s;">
+            <div class="stat-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            </div>
+            <div>
+              <div class="stat-value" data-count-to="99" data-suffix="%">99%</div>
+              <div class="stat-label">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. OUR DIVISIONS SECTION
+         ========================================================================== -->
+    <section class="divisions section-wrap" id="divisions">
+      <div class="section-heading scroll-reveal">
+        <span class="eyebrow"><i></i> Our divisions <i></i></span>
+        <h2>Two specialized divisions.<br><em>One commitment to better care.</em></h2>
+        <p>From essential medical supplies to advanced hydrotherapy systems, we help care providers find the right solutions.</p>
+      </div>
+      <div class="divisions__grid">
+        <article class="division-card division-card--medical scroll-reveal-left">
+          <img class="division-card__image" src="/images/products/medical-equipment.webp" alt="Medical Equipment" loading="lazy">
+          <div class="division-card__shade"></div>
+          <div class="division-card__content">
+            <span class="division-card__icon" aria-hidden="true">✚</span>
+            <p class="division-card__eyebrow">AuraCorp / 01</p>
+            <h3>Medical Division</h3>
+            <p class="division-card__description">Reliable products for hospitals, clinics and healthcare providers.</p>
+            <ul>
+              <li><span class="division-card__check" aria-hidden="true">✓</span>Medical equipment &amp; instruments</li>
+              <li><span class="division-card__check" aria-hidden="true">✓</span>Consumables &amp; disposables</li>
+              <li><span class="division-card__check" aria-hidden="true">✓</span>Diagnostic and monitoring devices</li>
+              <li><span class="division-card__check" aria-hidden="true">✓</span>Surgical products</li>
+            </ul>
+            <a class="button button--outline" href="medical.html">Explore medical <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="division-card division-card--hydrotherapy scroll-reveal-right">
+          <img class="division-card__image" src="/images/products/hydrotherapy-pool.webp" alt="Hydrotherapy Pool" loading="lazy">
+          <div class="division-card__shade"></div>
+          <div class="division-card__content">
+            <span class="division-card__icon" aria-hidden="true">≈</span>
+            <p class="division-card__eyebrow">AuraCorp / 02</p>
+            <h3>Hydrotherapy Division</h3>
+            <p class="division-card__description">Innovative systems for rehabilitation, recovery and wellness.</p>
+            <ul>
+              <li><span class="division-card__check" aria-hidden="true">✓</span>Hydrotherapy pools &amp; systems</li>
+              <li><span class="division-card__check" aria-hidden="true">✓</span>Rehabilitation equipment</li>
+              <li><span class="division-card__check" aria-hidden="true">✓</span>Spa &amp; wellness solutions</li>
+              <li><span class="division-card__check" aria-hidden="true">✓</span>Installation support</li>
+            </ul>
+            <a class="button button--outline" href="hydrotherapy.html">Explore hydrotherapy <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. ABOUT AURO CORPORATION SECTION
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-layout-grid">
+          <!-- Left Column -->
+          <div class="scroll-reveal-left">
+            <span class="eyebrow-gold">ABOUT AURACORP</span>
+            <h2 class="section-serif-heading" style="font-size: clamp(2rem, 3.2vw, 2.85rem);">
+              A Business Built on Relationships and Reliability.
+            </h2>
+            <p style="color:#64748b; line-height:1.75; font-size:1.025rem; margin-top:1.25rem;">
+              AuraCorp is a dedicated trading enterprise focused on connecting care providers and modern wellness spaces with trusted medical hardware and advanced hydrotherapy solutions. Our strength lies in our people, our partnerships and our commitment to creating value for every stakeholder.
+            </p>
+            <a href="#about" class="btn-navy-pill">
+              Know More About Us
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- Right Column: Illuminated HQ Building + 4 Corporate Pillars -->
+          <div class="about-visual-container scroll-reveal-right">
+            <div class="about-building-img-wrap">
+              <img src="assets/images/hero.jpg" alt="Auro Corporation Corporate Headquarters Building at Dusk">
+            </div>
+            <div class="about-pillars-column">
+              <div class="about-pillar-item scroll-reveal" style="--stagger-delay: 0.08s;">
+                <div class="pillar-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <span class="pillar-name">People First</span>
+              </div>
+              <div class="about-pillar-item scroll-reveal" style="--stagger-delay: 0.16s;">
+                <div class="pillar-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <span class="pillar-name">Integrity & Trust</span>
+              </div>
+              <div class="about-pillar-item scroll-reveal" style="--stagger-delay: 0.24s;">
+                <div class="pillar-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <span class="pillar-name">Diverse Industries</span>
+              </div>
+              <div class="about-pillar-item scroll-reveal" style="--stagger-delay: 0.32s;">
+                <div class="pillar-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>
+                </div>
+                <span class="pillar-name">Sustainable Growth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. OUR PRODUCTS SECTION (6 Horizontal Cards)
+         ========================================================================== -->
+    <section class="products-overview-section" id="products">
+      <div class="container">
+        <div class="products-header-row scroll-reveal">
+          <div>
+            <span class="eyebrow-gold">OUR PRODUCTS</span>
+            <h2 class="section-serif-heading" style="margin-bottom:0;">Wide Range of Products Across Industries.</h2>
+          </div>
+          <div>
+            <p style="color:#64748b; font-size:0.96875rem; line-height:1.7; margin-bottom:1.5rem;">
+              We trade a wide range of products through our network of companies, serving multiple industries with reliable sourcing and professional support.
+            </p>
+            <a href="#contact" class="btn-navy-pill" style="margin-top:0;">
+              Explore All Products
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 6 Product Cards Slider / Row -->
+        <div class="product-cards-slider-row">
+          <!-- 1. Medical Equipment -->
+          <div class="product-tile-card scroll-reveal" style="--stagger-delay: 0.06s;" onclick="window.openQuoteModal('Medical Equipment', 'Medical Division')">
+            <div class="product-tile-thumb">
+              <img src="https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=400&auto=format&fit=crop&q=80" alt="Medical Equipment" loading="lazy">
+            </div>
+            <div class="product-tile-footer">
+              <span>Medical Equipment</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+          </div>
+
+          <!-- 2. Healthcare Supplies -->
+          <div class="product-tile-card scroll-reveal" style="--stagger-delay: 0.12s;" onclick="window.openQuoteModal('Healthcare Supplies', 'Medical Division')">
+            <div class="product-tile-thumb">
+              <img src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=400&auto=format&fit=crop&q=80" alt="Healthcare Supplies" loading="lazy">
+            </div>
+            <div class="product-tile-footer">
+              <span>Healthcare Supplies</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+          </div>
+
+          <!-- 3. Industrial Products -->
+          <div class="product-tile-card scroll-reveal" style="--stagger-delay: 0.18s;" onclick="window.openQuoteModal('Industrial Products', 'Resonance Division')">
+            <div class="product-tile-thumb">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&auto=format&fit=crop&q=80" alt="Industrial Products" loading="lazy">
+            </div>
+            <div class="product-tile-footer">
+              <span>Industrial Products</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+          </div>
+
+          <!-- 4. Technical Products -->
+          <div class="product-tile-card scroll-reveal" style="--stagger-delay: 0.24s;" onclick="window.openQuoteModal('Technical Products', 'Resonance Division')">
+            <div class="product-tile-thumb">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&auto=format&fit=crop&q=80" alt="Technical Products" loading="lazy">
+            </div>
+            <div class="product-tile-footer">
+              <span>Technical Products</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+          </div>
+
+          <!-- 5. Consumer Products -->
+          <div class="product-tile-card scroll-reveal" style="--stagger-delay: 0.30s;" onclick="window.openQuoteModal('Consumer Products', 'Resonance Division')">
+            <div class="product-tile-thumb">
+              <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&auto=format&fit=crop&q=80" alt="Consumer Products" loading="lazy">
+            </div>
+            <div class="product-tile-footer">
+              <span>Consumer Products</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+          </div>
+
+          <!-- 6. Lifestyle Products -->
+          <div class="product-tile-card scroll-reveal" style="--stagger-delay: 0.36s;" onclick="window.openQuoteModal('Lifestyle Products', 'Resonance Division')">
+            <div class="product-tile-thumb">
+              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&auto=format&fit=crop&q=80" alt="Lifestyle Products" loading="lazy">
+            </div>
+            <div class="product-tile-footer">
+              <span>Lifestyle Products</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. OUR COMPANIES — A NETWORK OF GROWING BUSINESSES
+         ========================================================================== -->
+    <section class="companies-directory-section" id="companies">
+      <div class="container">
+        <div class="companies-header-row scroll-reveal">
+          <span class="eyebrow-gold">OUR COMPANIES</span>
+          <h2 class="section-serif-heading">A Network of Growing Businesses.</h2>
+          <p style="color:#64748b; font-size:0.96875rem;">
+            Our divisions include multiple companies, each focused on specific product categories and industry needs.
+          </p>
+        </div>
+
+        <div class="companies-tiles-strip">
+          <!-- 1. Aavamed -->
+          <div class="company-logo-tile scroll-reveal" style="--stagger-delay: 0.08s;" onclick="window.openQuoteModal('Aavamed', 'Medical Division')">
+            <div class="company-tile-emblem">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#00a2ea" stroke-width="2.2"><path d="M12 2L2 22h20L12 2z"/><path d="M12 8l5 10H7l5-10z"/></svg>
+            </div>
+            <span class="company-tile-name">Aavamed</span>
+            <span class="company-tile-division">Medical Division</span>
+          </div>
+
+          <!-- 2. ResoTech -->
+          <div class="company-logo-tile scroll-reveal" style="--stagger-delay: 0.16s;" onclick="window.openQuoteModal('ResoTech', 'Resonance Division')">
+            <div class="company-tile-emblem">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.2"><path d="M4 4h10a5 5 0 0 1 5 5v1a5 5 0 0 1-5 5H4V4z"/><path d="M14 15l6 7"/><line x1="4" x2="4" y1="4" y2="22"/></svg>
+            </div>
+            <span class="company-tile-name">ResoTech</span>
+            <span class="company-tile-division">Resonance Division</span>
+          </div>
+
+          <!-- 3. Nova Industries -->
+          <div class="company-logo-tile scroll-reveal" style="--stagger-delay: 0.24s;" onclick="window.openQuoteModal('Nova Industries', 'Resonance Division')">
+            <div class="company-tile-emblem">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.2"><path d="M12 3l9 18H3l9-18z"/><circle cx="12" cy="14" r="3" fill="#0284c7"/></svg>
+            </div>
+            <span class="company-tile-name">Nova Industries</span>
+            <span class="company-tile-division">Resonance Division</span>
+          </div>
+
+          <!-- 4. MediPlus -->
+          <div class="company-logo-tile scroll-reveal" style="--stagger-delay: 0.32s;" onclick="window.openQuoteModal('MediPlus', 'Medical Division')">
+            <div class="company-tile-emblem">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#00a2ea" stroke-width="2.2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <span class="company-tile-name">MediPlus</span>
+            <span class="company-tile-division">Medical Division</span>
+          </div>
+
+          <!-- 5. TradeCore -->
+          <div class="company-logo-tile scroll-reveal" style="--stagger-delay: 0.40s;" onclick="window.openQuoteModal('TradeCore', 'Resonance Division')">
+            <div class="company-tile-emblem">
+              <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.2"><rect width="16" height="16" x="4" y="4" rx="2" transform="rotate(45 12 12)"/><circle cx="12" cy="12" r="3" fill="#dc2626"/></svg>
+            </div>
+            <span class="company-tile-name">TradeCore</span>
+            <span class="company-tile-division">Resonance Division</span>
+          </div>
+
+          <!-- View All Companies Button -->
+          <a href="#companies" class="btn-view-all-pill scroll-reveal" style="--stagger-delay: 0.46s;">
+            View All Companies
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. WHY CHOOSE AURO CORPORATION — DELIVERING VALUE AT EVERY STEP
+         ========================================================================== -->
+    <section class="why-choose-pin-wrapper" id="why-us">
+      <div class="why-choose-sticky-stage" id="whyUsStickyStage">
+        <div class="container">
+          <div class="why-choose-header">
+            <span class="eyebrow-gold">WHY CHOOSE AURACORP</span>
+            <h2 class="section-serif-heading">Delivering Value at Every Step.</h2>
+            <p style="color:#64748b; font-size:0.96875rem;">
+              Our focus is on building long-term partnerships by offering quality products, reliable service and dedicated support.
+            </p>
+          </div>
+
+          <!-- Interactive Process Flow Path -->
+          <div class="step-path-container" id="stepPathContainer">
+            <!-- Dynamic SVG Curved Path Canvas -->
+            <svg class="step-path-svg" id="stepPathSvg" aria-hidden="true">
+              <defs>
+                <linearGradient id="stepPathGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#00a2ea" />
+                  <stop offset="50%" stop-color="#38bdf8" />
+                  <stop offset="100%" stop-color="#e5a93c" />
+                </linearGradient>
+                <linearGradient id="stepBeamGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="transparent" />
+                  <stop offset="50%" stop-color="#38bdf8" />
+                  <stop offset="100%" stop-color="#e5a93c" />
+                </linearGradient>
+              </defs>
+              <!-- Base Dashed Track -->
+              <path class="step-path-track" id="stepPathTrack" />
+              <!-- Animated Drawing Path -->
+              <path class="step-path-draw" id="stepPathDraw" />
+              <!-- Continuous Travelling Energy Beam -->
+              <path class="step-path-beam" id="stepPathBeam" />
+            </svg>
+
+            <!-- Step Path Flow Items (No cards, pure open step path flow) -->
+            <div class="step-path-grid">
+              <!-- Step 01 -->
+              <div class="step-path-item" data-step="1">
+                <div class="step-path-anchor-wrap">
+                  <div class="step-path-dot-anchor" id="stepDot1">
+                    <span class="step-dot-core">01</span>
+                    <span class="step-dot-pulse-ring"></span>
+                  </div>
+                </div>
+                <div class="step-path-content-block">
+                  <div class="step-node-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+                  </div>
+                  <h4 class="step-node-title">Diverse Product Range</h4>
+                  <p class="step-node-desc">Multiple industries, multiple opportunities.</p>
+                </div>
+              </div>
+
+              <!-- Step 02 -->
+              <div class="step-path-item" data-step="2">
+                <div class="step-path-anchor-wrap">
+                  <div class="step-path-dot-anchor" id="stepDot2">
+                    <span class="step-dot-core">02</span>
+                    <span class="step-dot-pulse-ring"></span>
+                  </div>
+                </div>
+                <div class="step-path-content-block">
+                  <div class="step-node-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+                  </div>
+                  <h4 class="step-node-title">Trusted Quality</h4>
+                  <p class="step-node-desc">Only genuine and reliable products.</p>
+                </div>
+              </div>
+
+              <!-- Step 03 -->
+              <div class="step-path-item" data-step="3">
+                <div class="step-path-anchor-wrap">
+                  <div class="step-path-dot-anchor" id="stepDot3">
+                    <span class="step-dot-core">03</span>
+                    <span class="step-dot-pulse-ring"></span>
+                  </div>
+                </div>
+                <div class="step-path-content-block">
+                  <div class="step-node-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m11 17 2 2a1 1 0 0 0 1.4 0l4.3-4.3a1 1 0 0 0 0-1.4l-2-2"/><path d="m13 7-2-2a1 1 0 0 0-1.4 0L5.3 9.3a1 1 0 0 0 0 1.4l2 2"/><circle cx="12" cy="12" r="9"/></svg>
+                  </div>
+                  <h4 class="step-node-title">Strong Partnerships</h4>
+                  <p class="step-node-desc">Built on trust and mutual growth.</p>
+                </div>
+              </div>
+
+              <!-- Step 04 -->
+              <div class="step-path-item" data-step="4">
+                <div class="step-path-anchor-wrap">
+                  <div class="step-path-dot-anchor" id="stepDot4">
+                    <span class="step-dot-core">04</span>
+                    <span class="step-dot-pulse-ring"></span>
+                  </div>
+                </div>
+                <div class="step-path-content-block">
+                  <div class="step-node-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                  </div>
+                  <h4 class="step-node-title">Dedicated Support</h4>
+                  <p class="step-node-desc">Guidance from enquiry to after-sales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. OUR PROCESS — A SIMPLE AND RELIABLE PROCESS
+         ========================================================================== -->
+    <section class="process-dark-section" id="process">
+      <div class="container process-layout-bar">
+        <div class="process-left-title">
+          <span style="font-size:0.75rem; font-weight:700; color:#38bdf8; letter-spacing:0.12em; text-transform:uppercase;">OUR PROCESS</span>
+          <h3 id="processHeading">A Simple and Reliable Process.</h3>
+        </div>
+
+        <div class="process-steps-row" id="processStepsRow">
+          <!-- Step 01 -->
+          <div class="process-step-node" data-skiper-index="0">
+            <div class="process-step-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <div class="process-step-text">
+              <span class="process-step-num">01</span>
+              <span class="process-step-name">Understand<br>Your Requirement</span>
+            </div>
+          </div>
+
+          <div class="process-arrow-divider">➔</div>
+
+          <!-- Step 02 -->
+          <div class="process-step-node" data-skiper-index="1">
+            <div class="process-step-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div class="process-step-text">
+              <span class="process-step-num">02</span>
+              <span class="process-step-name">Source<br>Quality Products</span>
+            </div>
+          </div>
+
+          <div class="process-arrow-divider">➔</div>
+
+          <!-- Step 03 -->
+          <div class="process-step-node" data-skiper-index="2">
+            <div class="process-step-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="13" x="1" y="3" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <div class="process-step-text">
+              <span class="process-step-num">03</span>
+              <span class="process-step-name">Ensure<br>Timely Delivery</span>
+            </div>
+          </div>
+
+          <div class="process-arrow-divider">➔</div>
+
+          <!-- Step 04 -->
+          <div class="process-step-node" data-skiper-index="3">
+            <div class="process-step-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="process-step-text">
+              <span class="process-step-num">04</span>
+              <span class="process-step-name">Ongoing<br>Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. LATEST NEWS & INSIGHTS
+         ========================================================================== -->
+    <section class="news-insights-section" id="insights">
+      <div class="container">
+        <div class="news-layout-grid">
+          <div class="scroll-reveal-left">
+            <span class="eyebrow-gold">LATEST NEWS & INSIGHTS</span>
+            <h2 class="section-serif-heading">Stay Updated with Industry Trends.</h2>
+            <p style="color:#64748b; font-size:0.96875rem; line-height:1.7; margin-bottom:1.5rem;">
+              Get the latest news, company updates and useful insights from the world of trade and industry.
+            </p>
+            <a href="#insights" class="btn-navy-pill">
+              View All Insights
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <div class="news-cards-row">
+            <!-- Article 1 -->
+            <div class="news-article-card scroll-reveal" style="--stagger-delay: 0.1s;">
+              <div class="news-thumb-wrap">
+                <img src="assets/images/medical.jpg" alt="Medical Supplies In Emerging Markets" loading="lazy">
+              </div>
+              <div class="news-content-pad">
+                <span class="news-date-tag">14 Sep 2026</span>
+                <h4 class="news-card-title">The Growing Demand for Medical Supplies in Emerging Markets</h4>
+                <div class="news-card-arrow">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="news-article-card scroll-reveal" style="--stagger-delay: 0.2s;">
+              <div class="news-thumb-wrap">
+                <img src="assets/images/resonance.jpg" alt="Global Trade Opportunities" loading="lazy">
+              </div>
+              <div class="news-content-pad">
+                <span class="news-date-tag">18 Sep 2026</span>
+                <h4 class="news-card-title">Global Trade Opportunities in Expanding Industries</h4>
+                <div class="news-card-arrow">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="news-article-card scroll-reveal" style="--stagger-delay: 0.3s;">
+              <div class="news-thumb-wrap">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=500&auto=format&fit=crop&q=80" alt="Innovations in Healthcare and Wellness" loading="lazy">
+              </div>
+              <div class="news-content-pad">
+                <span class="news-date-tag">22 Sep 2026</span>
+                <h4 class="news-card-title">Innovations in Healthcare and Wellness</h4>
+                <div class="news-card-arrow">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10.5. STANDALONE LUXURY VISION STRIP — PETAL DISSOLVE SHOWCASE
+         ========================================================================== -->
+    <section class="vision-quote-strip-section" id="vision-quote">
+      <div class="container text-center scroll-reveal-zoom">
+        <span class="vision-quote-badge">- AURACORP CORE PHILOSOPHY -</span>
+        <h2 class="vision-quote-heading">
+          Trading Today. <span class="petal-dissolve-target" data-petal-id="vision">A Brighter Tomorrow.</span>
+        </h2>
+        <p class="vision-quote-sub">
+          Where enduring trust and diversified expertise blossom into global value.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. OUR GLOBAL PRESENCE — CONNECTING MARKETS ACROSS BORDERS
+         ========================================================================== -->
+    <section class="global-presence-exact-section" id="global-presence">
+      <div class="container">
+        <div class="global-presence-3col-grid">
+          <!-- Left: Title, Description, Button -->
+          <div class="global-left-panel scroll-reveal-left">
+            <span class="eyebrow-gold" style="color:#d97706;">OUR GLOBAL PRESENCE</span>
+            <h2>Connecting Markets Across Borders.</h2>
+            <p>
+              We work with trusted manufacturers and suppliers from around the world to deliver quality products at the right time, to the right place.
+            </p>
+            <a href="#contact" class="btn-white-pill">
+              Explore Our Global Network
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+
+          <!-- Center: Connected World Map Visual with Pulsing Hub Nodes -->
+          <div class="global-center-map-wrap scroll-reveal-zoom">
+            <div class="global-map-interactive-container">
+              <img src="assets/images/global_connected_map.jpg" alt="Auro Corporation Global Connected Trade Network" class="global-connected-map-img" loading="lazy">
+              <!-- Pulsing Radar Animation Nodes Overlay on the Map -->
+              <div class="map-pulse-node na" style="top: 35%; left: 24%;" title="North America Hub"></div>
+              <div class="map-pulse-node sa" style="top: 65%; left: 31%;" title="South America Hub"></div>
+              <div class="map-pulse-node eu" style="top: 28%; left: 51%;" title="Europe Hub"></div>
+              <div class="map-pulse-node me" style="top: 40%; left: 58%;" title="Middle East Central Hub"></div>
+              <div class="map-pulse-node af" style="top: 60%; left: 53%;" title="Africa Hub"></div>
+              <div class="map-pulse-node as" style="top: 36%; left: 75%;" title="Asia Hub"></div>
+              <div class="map-pulse-node au" style="top: 73%; left: 84%;" title="Australia Hub"></div>
+            </div>
+          </div>
+
+          <!-- Right: 3 Dark Value Tiles -->
+          <div class="global-right-cards">
+            <!-- Tile 1 -->
+            <div class="global-right-tile scroll-reveal-right" style="--stagger-delay: 0.1s;">
+              <div class="global-tile-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              </div>
+              <div class="global-tile-content">
+                <h4>Global Sourcing</h4>
+                <p>Access to international brands and manufacturers.</p>
+              </div>
+            </div>
+
+            <!-- Tile 2 -->
+            <div class="global-right-tile scroll-reveal-right" style="--stagger-delay: 0.2s;">
+              <div class="global-tile-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg>
+              </div>
+              <div class="global-tile-content">
+                <h4>Strong Supply Chain</h4>
+                <p>Reliable and efficient distribution network.</p>
+              </div>
+            </div>
+
+            <!-- Tile 3 -->
+            <div class="global-right-tile scroll-reveal-right" style="--stagger-delay: 0.3s;">
+              <div class="global-tile-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              </div>
+              <div class="global-tile-content">
+                <h4>Growing Presence</h4>
+                <p>Expanding to new markets and opportunities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. CALL TO ACTION BANNER (LET'S BUILD NEW POSSIBILITIES TOGETHER)
+         ========================================================================== -->
+    <section class="cta-banner-section" id="contact">
+      <div class="container cta-banner-inner scroll-reveal-zoom">
+        <div>
+          <h2 class="cta-heading">Let's Build New Possibilities Together.</h2>
+          <p class="cta-subtext">Have a question or business enquiry? We'd love to hear from you.</p>
+        </div>
+        <div>
+          <button class="btn-white-pill" style="padding:0.85rem 1.8rem; font-size:0.9375rem;" onclick="window.openQuoteModal('General Commercial Enquiry', 'Both Divisions')">
+            Get in Touch
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       13. COMPREHENSIVE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Logo, Bio, Social -->
+        <div>
+          <a href="#home" class="navbar__brand footer__brand" aria-label="AuraCorp home">
+            <span class="navbar__brand-mark" aria-hidden="true"><i></i></span>
+            <span class="navbar__wordmark">AURA<span>CORP</span><small>HEALTHCARE &amp; WELLNESS</small></span>
+          </a>
+          <p class="footer-brand-desc">
+            We connect care providers with trusted medical products and advanced hydrotherapy solutions for healthcare and wellness.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="social-round-btn" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-round-btn" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-round-btn" aria-label="YouTube">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#030712"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-header">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#divisions">Our Divisions</a></li>
+            <li><a href="#companies">Companies</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#insights">Insights</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Our Divisions -->
+        <div>
+          <h4 class="footer-col-header">Our Divisions</h4>
+          <ul class="footer-links-list">
+            <li><a href="medical.html">Medical Division</a></li>
+            <li><a href="hydrotherapy.html">Hydrotherapy Division</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info (Patna, Bihar, India as shown in screenshot!) -->
+        <div>
+          <h4 class="footer-col-header">Contact Info</h4>
+          <div class="footer-contact-details">
+            <div class="contact-row-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>+91 98765 43210</span>
+            </div>
+            <div class="contact-row-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>info@aurocorporation.com</span>
+            </div>
+            <div class="contact-row-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Patna, Bihar, India</span>
+            </div>
+            <div class="contact-row-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Mon – Sat, 9:00 AM – 6:00 PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 5: Graphic & Slogan -->
+        <div class="footer-graphic-box">
+          <svg class="footer-map-subtle-svg" viewBox="0 0 140 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 20 Q 30 15, 45 25 Q 40 40, 25 45 Z" fill="rgba(255,255,255,0.06)"/>
+            <path d="M70 15 Q 100 10, 125 25 Q 115 45, 80 40 Z" fill="rgba(255,255,255,0.06)"/>
+            <circle cx="28" cy="22" r="2" fill="#38bdf8"/>
+            <circle cx="85" cy="26" r="2" fill="#e5a93c"/>
+            <path d="M28 22 Q 55 10, 85 26" stroke="#38bdf8" stroke-width="1" stroke-dasharray="2 2" opacity="0.4"/>
+          </svg>
+          <div class="footer-slogan-text">
+            TRADING<br>
+            GLOBALLY<br>
+            GROWING<br>
+            TOGETHER
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>© 2026 AuraCorp. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Sitemap</a>
+          <a href="#home" class="back-to-top-btn" aria-label="Back to top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div> <!-- /.site-wrapper -->
+
+<!-- Mobile Drawer Navigation (Direct child of body to prevent any overflow inheritance) -->
+<div class="mobile-nav-drawer" id="mobileNavDrawer">
+  <div class="mobile-nav-header">
+    <a class="navbar__brand" href="#home" aria-label="AuraCorp home">
+      <span class="navbar__brand-mark" aria-hidden="true"><i></i></span>
+      <span class="navbar__wordmark">AURA<span>CORP</span><small>HEALTHCARE &amp; WELLNESS</small></span>
+    </a>
+    <button class="mobile-nav-close" id="closeMobileNav" aria-label="Close navigation">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <ul class="mobile-nav-menu">
+    <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+    <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+    <li><a href="medical.html" class="mobile-nav-link">Medical Division</a></li>
+    <li><a href="hydrotherapy.html" class="mobile-nav-link">Hydrotherapy Division</a></li>
+    <li><a href="#companies" class="mobile-nav-link">Companies</a></li>
+    <li><a href="#products" class="mobile-nav-link">Products</a></li>
+    <li><a href="#why-us" class="mobile-nav-link">Why Us</a></li>
+    <li><a href="#insights" class="mobile-nav-link">Insights</a></li>
+    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+  </ul>
+  <div class="mobile-nav-footer">
+    <a href="#contact" class="btn-cyan-pill mobile-nav-cta">Get In Touch</a>
+  </div>
+</div>
+<div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>

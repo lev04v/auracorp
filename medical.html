@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Medical Division — Auro Corporation | Precision Healthcare & Clinical Supplies</title>
+  <meta name="description" content="Auro Corporation Medical Division delivers precision diagnostic equipment, surgical instruments, critical care systems and certified hospital consumables across global markets.">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet & Division Specific Styles -->
+  <link rel="stylesheet" href="css/styles.css?v=6.1">
+  <link rel="stylesheet" href="css/divisions.css?v=1.0">
+</head>
+<body>
+
+  <div class="site-wrapper">
+
+    <!-- ==========================================================================
+         1. NAVIGATION HEADER
+         ========================================================================== -->
+    <header class="navbar" id="siteNavbar">
+      <a class="navbar__brand" href="index.html#home" aria-label="AuraCorp home">
+        <span class="navbar__brand-mark" aria-hidden="true"><i></i></span>
+        <span class="navbar__wordmark">AURA<span>CORP</span><small>HEALTHCARE &amp; WELLNESS</small></span>
+      </a>
+      <nav class="navbar__links" id="primaryNav" aria-label="Primary navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About us</a>
+        <div class="navbar__division-menu" id="navDivisionMenu">
+          <button class="navbar__division-trigger" id="navDivisionTrigger" type="button" aria-expanded="false" aria-controls="divisionSubmenu">
+            Divisions <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="navbar__submenu" id="divisionSubmenu" hidden>
+            <a href="medical.html" style="color:var(--cyan-light); font-weight:700;">✚ Medical Division</a>
+            <a href="hydrotherapy.html">≈ Hydrotherapy Division</a>
+          </div>
+        </div>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#why-us">Why AuraCorp</a>
+        <a href="index.html#insights">Insights</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="navbar__actions">
+        <button class="btn-cyan-pill" style="padding: 8px 18px; font-size: 0.8125rem;" onclick="openRfqModal('General Medical Inventory', 'Medical Division')">
+          Request RFQ <span aria-hidden="true">↗</span>
+        </button>
+        <button class="navbar__menu-toggle" id="navbarMenuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ==========================================================================
+           2. MEDICAL HERO SECTION
+           ========================================================================== -->
+      <section class="division-hero" id="overview">
+        <div class="division-hero__bg-wrap" aria-hidden="true">
+          <img class="division-hero__bg-img" src="assets/images/medical.jpg" alt="Medical Division Surgery and Diagnostic Environment">
+        </div>
+        <div class="division-hero__overlay" aria-hidden="true"></div>
+
+        <div class="container">
+          <div class="division-hero__content">
+            <div class="division-breadcrumb">
+              <a href="index.html">Auro Corporation</a>
+              <span class="separator">/</span>
+              <a href="index.html#divisions">Divisions</a>
+              <span class="separator">/</span>
+              <span style="color:#ffffff;">Medical Division</span>
+            </div>
+
+            <div class="division-hero__badge">
+              <span class="division-hero__badge-dot"></span>
+              AuroCorp Division 01 // Clinical &amp; Surgical Excellence
+            </div>
+
+            <h1>Precision Medical Equipment &amp;<br><em>Certified Healthcare Supplies</em></h1>
+            <p class="division-hero__lead">
+              Connecting hospital networks, surgical centres, and diagnostic laboratories with international-grade clinical equipment, diagnostic telemetry, and dependable medical consumables. Engineered for uncompromised clinical outcomes.
+            </p>
+
+            <div class="division-hero__cta-group">
+              <button class="btn-cyan-pill" style="padding: 12px 28px; font-size: 0.9375rem;" onclick="openRfqModal('Complete Medical Product Catalog', 'Medical Division')">
+                Request Division Catalog (PDF)
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+              <a href="#catalog" class="btn-white-pill" style="padding: 12px 24px; font-size: 0.9375rem;">
+                Explore Product Lines
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+              </a>
+            </div>
+
+            <div class="division-hero__stats-row">
+              <div class="division-stat-box">
+                <div class="division-stat-box__val">450<span>+</span></div>
+                <div class="division-stat-box__label">Certified Clinical SKUs in Active Supply</div>
+              </div>
+              <div class="division-stat-box">
+                <div class="division-stat-box__val">120<span>+</span></div>
+                <div class="division-stat-box__label">Partner Hospitals &amp; Diagnostic Networks</div>
+              </div>
+              <div class="division-stat-box">
+                <div class="division-stat-box__val">100<span>%</span></div>
+                <div class="division-stat-box__label">ISO 13485 &amp; CE MDR Regulatory Compliance</div>
+              </div>
+              <div class="division-stat-box">
+                <div class="division-stat-box__val">48<span>h</span></div>
+                <div class="division-stat-box__label">Rapid Emergency Consumable Dispatch</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           3. DIVISION STICKY QUICK NAVIGATION
+           ========================================================================== -->
+      <nav class="division-subnav" aria-label="Division In-Page Navigation">
+        <div class="container">
+          <div class="division-subnav__list">
+            <a href="#overview" class="division-subnav__link active">Overview</a>
+            <a href="#capabilities" class="division-subnav__link">Core Capabilities</a>
+            <a href="#catalog" class="division-subnav__link">Equipment &amp; Supplies</a>
+            <a href="#compliance" class="division-subnav__link">Quality &amp; Standards</a>
+            <a href="#workflow" class="division-subnav__link">Procurement Flow</a>
+            <a href="#case-study" class="division-subnav__link">Case Study</a>
+            <a href="#rfq" class="division-subnav__link">Request RFQ</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ==========================================================================
+           4. CORE CAPABILITIES & MISSION
+           ========================================================================== -->
+      <section class="division-section" id="capabilities">
+        <div class="container">
+          <div class="overview-grid">
+            <div>
+              <span class="eyebrow-gold">DIVISION PILLARS</span>
+              <h2 class="section-serif-heading" style="font-size: clamp(2rem, 3.2vw, 2.75rem); margin: 0.75rem 0 1.25rem;">
+                Bridging Global Innovation with Everyday Clinical Precision.
+              </h2>
+              <p style="color:#64748b; line-height:1.75; font-size:1.025rem;">
+                Auro Corporation’s Medical Division operates as an authorized procurement and supply partner for premier healthcare institutions. We bridge manufacturers of high-performance biomedical hardware and sterile consumables with doctors and healthcare administrators who require zero-failure reliability.
+              </p>
+
+              <div class="overview-features-list">
+                <div class="overview-feature-item">
+                  <div class="overview-feature-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  </div>
+                  <div>
+                    <h4>Diagnostic &amp; Patient Telemetry</h4>
+                    <p>High-resolution multi-parameter vital monitors, 12-lead ECG machines, digital ultrasonography, and point-of-care rapid testing instruments.</p>
+                  </div>
+                </div>
+
+                <div class="overview-feature-item">
+                  <div class="overview-feature-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg>
+                  </div>
+                  <div>
+                    <h4>Surgical &amp; Operation Theatre Infrastructure</h4>
+                    <p>Advanced monopolar/bipolar electrosurgical generators, ergonomic surgical tables, shadowless surgical OT LED lights, and autoclave sterilization.</p>
+                  </div>
+                </div>
+
+                <div class="overview-feature-item">
+                  <div class="overview-feature-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                  </div>
+                  <div>
+                    <h4>Critical Life Support &amp; Emergency Systems</h4>
+                    <p>ICU turbine ventilators, dual-chamber syringe infusion pumps, automated external defibrillators (AED), and emergency crash carts.</p>
+                  </div>
+                </div>
+
+                <div class="overview-feature-item">
+                  <div class="overview-feature-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 9h6M9 15h6"/></svg>
+                  </div>
+                  <div>
+                    <h4>Medical Consumables &amp; Sterile Packs</h4>
+                    <p>Medical-grade hypodermic needles, sterile surgical drapes, catheters, IV administration sets, and PPE certified under WHO-GMP standards.</p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn-navy-pill" onclick="openRfqModal('Institutional Hospital Supply Contract', 'Medical Division')">
+                Schedule Institutional Consultation
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+
+            <div class="overview-visual">
+              <img src="/images/products/medical-equipment.webp" alt="AuroCorp Certified Medical Instrumentation">
+              <div class="overview-visual__badge">
+                <div class="overview-badge-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div class="overview-badge-text">
+                  <h4>Factory Certified Calibration</h4>
+                  <p>100% pre-tested with traceable biomedical quality certificates prior to dispatch.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           5. INTERACTIVE PRODUCT CATALOG SHOWCASE
+           ========================================================================== -->
+      <section class="division-section division-section--alt" id="catalog">
+        <div class="container">
+          <div class="division-sec-header">
+            <span class="eyebrow">FEATURED CLINICAL INVENTORY</span>
+            <h2>Specialized Equipment &amp; Medical Supplies</h2>
+            <p>Every product is sourced through rigorous manufacturer verification, fulfilling strict biocompatibility and electromagnetic compliance standards.</p>
+          </div>
+
+          <!-- Product Cards Grid -->
+          <div class="catalog-grid">
+            <!-- Card 1 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="/images/products/medical-equipment.webp" alt="Multi-Parameter Patient Monitor">
+                <span class="product-badge-tag tag-hot">FLAGSHIP</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SKU: AC-MON-850</span>
+                  <span style="color:#0284c7;">ICU / OT Series</span>
+                </div>
+                <h3 class="product-spec-title">AuroCare HD-850 Vital Signs Telemetry Monitor</h3>
+                <p class="product-spec-desc">15.6-inch anti-glare capacitive touchscreen monitor delivering real-time ECG, SpO2, NIBP, Respiration, Temperature, and optional EtCO2 monitoring.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Display</td>
+                    <td>15.6" Full HD TFT Display</td>
+                  </tr>
+                  <tr>
+                    <td>Battery Autonomy</td>
+                    <td>Up to 4.5 hours continuous</td>
+                  </tr>
+                  <tr>
+                    <td>Connectivity</td>
+                    <td>HL7, Wi-Fi &amp; Ethernet ready</td>
+                  </tr>
+                  <tr>
+                    <td>Compliance</td>
+                    <td>CE MDR, ISO 13485</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" onclick="openRfqModal('AuroCare HD-850 Vital Monitor', 'Medical Division')">Request Unit RFQ</button>
+                  <button class="btn-card-spec" title="Download Spec Sheet" onclick="openSpecAlert('AuroCare HD-850 Vital Monitor')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="assets/images/medical.jpg" alt="AuroSurg Electrosurgical Generator">
+                <span class="product-badge-tag tag-cert">ISO 13485</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SKU: AC-SURG-400</span>
+                  <span style="color:#0284c7;">Surgical Theatre</span>
+                </div>
+                <h3 class="product-spec-title">AuroSurg 400W Precision Electrosurgical Unit</h3>
+                <p class="product-spec-desc">High-frequency electrosurgical generator with automated tissue impedance feedback, pure cut, blend cut, and contact bipolar micro-coagulation.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Max Power Output</td>
+                    <td>400W Monopolar / 120W Bipolar</td>
+                  </tr>
+                  <tr>
+                    <td>Tissue Feedback</td>
+                    <td>Dynamic real-time impedance</td>
+                  </tr>
+                  <tr>
+                    <td>Safety System</td>
+                    <td>REM Return Electrode Monitor</td>
+                  </tr>
+                  <tr>
+                    <td>Applications</td>
+                    <td>General, Orthopedic, Laparoscopy</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" onclick="openRfqModal('AuroSurg 400W Electrosurgical Unit', 'Medical Division')">Request Unit RFQ</button>
+                  <button class="btn-card-spec" title="Download Spec Sheet" onclick="openSpecAlert('AuroSurg 400W Electrosurgical Unit')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="/images/products/medical-equipment.webp" alt="ICU Turbine Transport Ventilator">
+                <span class="product-badge-tag tag-hot">CRITICAL CARE</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SKU: AC-VENT-900</span>
+                  <span style="color:#0284c7;">Life Support</span>
+                </div>
+                <h3 class="product-spec-title">AuroVent 900 Multi-Mode Turbine Ventilator</h3>
+                <p class="product-spec-desc">High-performance ventilator supporting invasive and non-invasive ventilation for adult, pediatric, and neonatal patients with integrated turbine air delivery.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Ventilation Modes</td>
+                    <td>VCV, PCV, SIMV, CPAP, PSV, APRV</td>
+                  </tr>
+                  <tr>
+                    <td>Drive System</td>
+                    <td>Built-in ultra-quiet turbine</td>
+                  </tr>
+                  <tr>
+                    <td>O2 Concentration</td>
+                    <td>21% to 100% adjustable</td>
+                  </tr>
+                  <tr>
+                    <td>Battery Backup</td>
+                    <td>Hot-swappable dual battery (8 hrs)</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" onclick="openRfqModal('AuroVent 900 Multi-Mode Ventilator', 'Medical Division')">Request Unit RFQ</button>
+                  <button class="btn-card-spec" title="Download Spec Sheet" onclick="openSpecAlert('AuroVent 900 Multi-Mode Ventilator')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="assets/images/medical.jpg" alt="OT Shadowless LED Lamp">
+                <span class="product-badge-tag">SURGICAL OT</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SKU: AC-LGT-700</span>
+                  <span style="color:#0284c7;">OT Lighting</span>
+                </div>
+                <h3 class="product-spec-title">AuroLight Dual-Dome Shadowless OT Luminaire</h3>
+                <p class="product-spec-desc">Cold-light surgical LED illumination engineered with aerodynamic laminar flow design, customizable color temperatures, and high depth-of-field penetration.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Central Illuminance</td>
+                    <td>160,000 Lux (Dome 1) / 140,000 Lux</td>
+                  </tr>
+                  <tr>
+                    <td>Color Temp (K)</td>
+                    <td>3,800K - 5,000K (4 steps)</td>
+                  </tr>
+                  <tr>
+                    <td>LED Lifespan</td>
+                    <td>&gt; 60,000 operating hours</td>
+                  </tr>
+                  <tr>
+                    <td>CRI (Ra)</td>
+                    <td>&ge; 97 for natural tissue contrast</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" onclick="openRfqModal('AuroLight Dual-Dome OT Luminaire', 'Medical Division')">Request Unit RFQ</button>
+                  <button class="btn-card-spec" title="Download Spec Sheet" onclick="openSpecAlert('AuroLight Dual-Dome OT Luminaire')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="/images/products/medical-equipment.webp" alt="12 Channel Digital ECG Workstation">
+                <span class="product-badge-tag tag-cert">DIAGNOSTIC</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SKU: AC-ECG-1200</span>
+                  <span style="color:#0284c7;">Cardiology</span>
+                </div>
+                <h3 class="product-spec-title">AuroCardio 12-Channel Diagnostic Electrocardiograph</h3>
+                <p class="product-spec-desc">Simultaneous 12-lead acquisition system with Glasgow interpretation algorithm, thermal high-speed printing, and digital hospital EMR/PACS sync.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Lead Acquisition</td>
+                    <td>Simultaneous 12-lead synchronized</td>
+                  </tr>
+                  <tr>
+                    <td>Sampling Rate</td>
+                    <td>8,000 Hz for high fidelity</td>
+                  </tr>
+                  <tr>
+                    <td>Storage</td>
+                    <td>10,000+ patient records internally</td>
+                  </tr>
+                  <tr>
+                    <td>Output Formats</td>
+                    <td>PDF, XML, DICOM, HL7</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" onclick="openRfqModal('AuroCardio 12-Channel ECG', 'Medical Division')">Request Unit RFQ</button>
+                  <button class="btn-card-spec" title="Download Spec Sheet" onclick="openSpecAlert('AuroCardio 12-Channel ECG')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="product-spec-card">
+              <div class="product-spec-thumb">
+                <img src="assets/images/medical.jpg" alt="Clinical Consumables & Sterile Packs">
+                <span class="product-badge-tag tag-hot">HIGH VOLUME</span>
+              </div>
+              <div class="product-spec-body">
+                <div class="product-spec-meta">
+                  <span>SKU: AC-CON-BULK</span>
+                  <span style="color:#0284c7;">Consumables</span>
+                </div>
+                <h3 class="product-spec-title">AuroSterile Institutional Clinical Consumable Packs</h3>
+                <p class="product-spec-desc">Bulk supply lines of pyrogen-free hypodermic syringes, infusion sets, disposable surgical drapes, catheter kits, and medical protective grade-3 PPE.</p>
+                
+                <table class="product-spec-table">
+                  <tr>
+                    <td>Sterilization</td>
+                    <td>Ethylene Oxide (EtO) / Gamma Ray</td>
+                  </tr>
+                  <tr>
+                    <td>Biocompatibility</td>
+                    <td>ISO 10993 cytotoxicity certified</td>
+                  </tr>
+                  <tr>
+                    <td>Packaging</td>
+                    <td>Medical grade Tyvek peel pouches</td>
+                  </tr>
+                  <tr>
+                    <td>Batch Size</td>
+                    <td>From 1,000 to 500,000 units bulk</td>
+                  </tr>
+                </table>
+
+                <div class="product-spec-footer">
+                  <button class="btn-card-quote" onclick="openRfqModal('AuroSterile Clinical Consumable Packs', 'Medical Division')">Request Bulk Quote</button>
+                  <button class="btn-card-spec" title="Download Spec Sheet" onclick="openSpecAlert('AuroSterile Clinical Consumable Packs')">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           6. COMPLIANCE & INTERNATIONAL CERTIFICATIONS
+           ========================================================================== -->
+      <section class="division-section division-section--dark" id="compliance">
+        <div class="container">
+          <div class="division-sec-header dark">
+            <span class="eyebrow">UNCOMPROMISING REGULATORY INTEGRITY</span>
+            <h2>Global Standards &amp; Verified Certifications</h2>
+            <p>Every medical hardware unit and clinical supply lot undergoes rigorous validation against global healthcare regulatory frameworks.</p>
+          </div>
+
+          <div class="compliance-grid">
+            <div class="compliance-card">
+              <div class="compliance-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <h3>ISO 13485:2016</h3>
+              <p>Comprehensive Quality Management Systems for design, procurement, and distribution of medical devices.</p>
+            </div>
+
+            <div class="compliance-card">
+              <div class="compliance-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3>CE MDR (EU 2017/745)</h3>
+              <p>Conformity with European Union Medical Device Regulation governing safety, performance, and clinical evaluation.</p>
+            </div>
+
+            <div class="compliance-card">
+              <div class="compliance-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 7h10M7 12h10M7 17h6"/></svg>
+              </div>
+              <h3>WHO-GMP Standards</h3>
+              <p>World Health Organization Good Manufacturing Practices guaranteeing spotless sanitary sterile packaging.</p>
+            </div>
+
+            <div class="compliance-card">
+              <div class="compliance-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <h3>Biocompatibility &amp; EMC</h3>
+              <p>Full IEC 60601 electrical medical safety certification and ISO 10993 non-toxic patient contact approval.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           7. PROCUREMENT & SUPPLY CHAIN FLOW
+           ========================================================================== -->
+      <section class="division-section" id="workflow">
+        <div class="container">
+          <div class="division-sec-header">
+            <span class="eyebrow">RELIABLE REPEATABLE EXECUTION</span>
+            <h2>Hospital Procurement &amp; Distribution Workflow</h2>
+            <p>From bill-of-quantities evaluation to bedside clinical commissioning, our systematic logistics safeguards your capital investment.</p>
+          </div>
+
+          <div class="turnkey-grid">
+            <div class="turnkey-step">
+              <span class="turnkey-step__num">STEP 01</span>
+              <h3>Need Assessment &amp; BOQ</h3>
+              <p>Biomedical engineering review of hospital bed capacity, clinical specialty, and tender specifications.</p>
+            </div>
+
+            <div class="turnkey-step">
+              <span class="turnkey-step__num">STEP 02</span>
+              <h3>Manufacturer Direct Audit</h3>
+              <p>Sourcing directly from verified tier-1 global production lines with zero intermediate markup or delays.</p>
+            </div>
+
+            <div class="turnkey-step">
+              <span class="turnkey-step__num">STEP 03</span>
+              <h3>Pre-Shipment Calibration</h3>
+              <p>Every electronic device is run through a 72-hour burn-in and calibration benchmark with test reports.</p>
+            </div>
+
+            <div class="turnkey-step">
+              <span class="turnkey-step__num">STEP 04</span>
+              <h3>Expedited Logistics</h3>
+              <p>Climate-controlled transport and dedicated customs handling straight to your hospital unloading bay.</p>
+            </div>
+
+            <div class="turnkey-step">
+              <span class="turnkey-step__num">STEP 05</span>
+              <h3>Installation &amp; Clinical SLA</h3>
+              <p>On-site installation by certified biomedical technicians with warranty support and staff operational training.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           8. CLINICAL CASE STUDY
+           ========================================================================== -->
+      <section class="division-section division-section--alt" id="case-study">
+        <div class="container">
+          <div class="case-study-card">
+            <div class="case-study-content">
+              <span class="case-study-tag">CLINICAL COMMISSIONING CASE STUDY</span>
+              <h3>Modernizing ICU Telemetry &amp; Surgical Suites for a 350-Bed Multi-Speciality Hospital</h3>
+              <p>
+                When a major multi-speciality medical campus in Eastern India prepared to expand its critical care capacity, Auro Corporation's Medical Division was selected as the prime turnkey equipment supply partner. We supplied and calibrated 48 patient monitors, 6 OT LED lighting domes, and continuous consumables lines.
+              </p>
+
+              <div class="case-study-stats">
+                <div class="case-study-stat-item">
+                  <h4>99.8<span>%</span></h4>
+                  <p>System Uptime Across Critical ICU Beds</p>
+                </div>
+                <div class="case-study-stat-item">
+                  <h4>18<span> Days</span></h4>
+                  <p>From Final RFQ to Operational Clinical Commissioning</p>
+                </div>
+                <div class="case-study-stat-item">
+                  <h4>24<span>/7</span></h4>
+                  <p>On-Call Biomedical SLA Response Guarantee</p>
+                </div>
+              </div>
+
+              <div>
+                <button class="btn-navy-pill" onclick="openRfqModal('Case Study Detailed Report & Consultation', 'Medical Division')">
+                  Download Full Case Study (PDF)
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="case-study-visual">
+              <img src="assets/images/medical.jpg" alt="Clinical Case Study Multi-Speciality Hospital">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           9. DIVISION SWITCHER STRIP
+           ========================================================================== -->
+      <div class="division-switcher-strip">
+        <div class="container switcher-inner">
+          <div class="switcher-info">
+            <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.15em; color:#38e1d5; font-weight:800;">EXPLORE OUR SISTER VERTICAL</span>
+            <h3>Looking for Rehabilitation &amp; Hydrotherapy Solutions?</h3>
+            <p>Discover our specialized aquatic chambers, underwater treadmills, and contrast recovery pools in Division 02.</p>
+          </div>
+          <div class="switcher-actions">
+            <a href="hydrotherapy.html" class="btn-cyan-pill" style="padding:10px 22px; font-size:0.875rem;">
+              View Hydrotherapy Division
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+           10. ON-PAGE RFQ CONTACT BANNER
+           ========================================================================== -->
+      <section class="cta-banner-section" id="rfq">
+        <div class="container cta-banner-inner">
+          <div>
+            <h2 class="cta-heading">Request a Medical Equipment Quotation</h2>
+            <p class="cta-subtext">Submit your institution's equipment requirements or tender specs for immediate pricing &amp; logistics lead times.</p>
+          </div>
+          <div>
+            <button class="btn-white-pill" style="padding:0.85rem 2rem; font-size:0.9375rem;" onclick="openRfqModal('Institutional Hospital RFQ', 'Medical Division')">
+              Open RFQ Form
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================================================
+         11. COMPREHENSIVE FOOTER
+         ========================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top-grid">
+          <!-- Col 1 -->
+          <div>
+            <a href="index.html#home" class="navbar__brand footer__brand" aria-label="AuraCorp home">
+              <span class="navbar__brand-mark" aria-hidden="true"><i></i></span>
+              <span class="navbar__wordmark">AURA<span>CORP</span><small>HEALTHCARE &amp; WELLNESS</small></span>
+            </a>
+            <p class="footer-brand-desc">
+              Medical Division: Dedicated to equipping care providers with verified, high-performance clinical hardware and daily surgical consumables.
+            </p>
+            <div class="footer-social-row">
+              <a href="#" class="social-round-btn" aria-label="LinkedIn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#" class="social-round-btn" aria-label="Instagram">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2 -->
+          <div>
+            <h4 class="footer-col-header">Quick Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="index.html">Main Homepage</a></li>
+              <li><a href="index.html#about">About Auro Corporation</a></li>
+              <li><a href="medical.html">Medical Division</a></li>
+              <li><a href="hydrotherapy.html">Hydrotherapy Division</a></li>
+              <li><a href="index.html#products">Products Overview</a></li>
+              <li><a href="index.html#contact">Corporate Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3 -->
+          <div>
+            <h4 class="footer-col-header">Medical Verticals</h4>
+            <ul class="footer-links-list">
+              <li><a href="#catalog">Diagnostic Telemetry</a></li>
+              <li><a href="#catalog">Surgical OT Systems</a></li>
+              <li><a href="#catalog">Life Support &amp; ICU</a></li>
+              <li><a href="#catalog">Sterile Consumables</a></li>
+              <li><a href="#compliance">ISO 13485 Standards</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4 -->
+          <div>
+            <h4 class="footer-col-header">Contact &amp; Procurement</h4>
+            <div class="footer-contact-details">
+              <div class="contact-row-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>+91 98765 43210</span>
+              </div>
+              <div class="contact-row-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span>medical@aurocorporation.com</span>
+              </div>
+              <div class="contact-row-item">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Patna, Bihar, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 5 -->
+          <div class="footer-graphic-box">
+            <div class="footer-slogan-text">
+              PRECISION<br>
+              HEALTHCARE<br>
+              RELIABLE<br>
+              SUPPLY
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <div>© 2026 AuraCorp — Medical Division. All rights reserved.</div>
+          <div class="footer-legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#overview" class="back-to-top-btn" aria-label="Back to top">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Interactive RFQ Modal -->
+  <div class="rfq-modal-overlay" id="rfqModalOverlay">
+    <div class="rfq-modal-card">
+      <div class="rfq-modal-header">
+        <h3 id="rfqModalTitle">Request Medical Division Quotation</h3>
+        <button class="rfq-modal-close" onclick="closeRfqModal()">&times;</button>
+      </div>
+      <div class="rfq-modal-body">
+        <form onsubmit="handleRfqSubmit(event)">
+          <div class="rfq-form-group">
+            <label class="rfq-form-label">Product / Category of Interest</label>
+            <input type="text" class="rfq-form-input" id="rfqProductInput" required>
+          </div>
+          <div class="rfq-form-group">
+            <label class="rfq-form-label">Healthcare Institution / Organization</label>
+            <input type="text" class="rfq-form-input" placeholder="e.g. Apex Hospital & Research Institute" required>
+          </div>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+            <div class="rfq-form-group">
+              <label class="rfq-form-label">Contact Person</label>
+              <input type="text" class="rfq-form-input" placeholder="Dr. / Mr. Name" required>
+            </div>
+            <div class="rfq-form-group">
+              <label class="rfq-form-label">Official Email / Phone</label>
+              <input type="text" class="rfq-form-input" placeholder="+91 / email" required>
+            </div>
+          </div>
+          <div class="rfq-form-group">
+            <label class="rfq-form-label">Estimated Quantity / Timeline</label>
+            <select class="rfq-form-select">
+              <option>1 – 5 Units (Evaluation / Pilot)</option>
+              <option>5 – 25 Units (Department Upgrade)</option>
+              <option>25+ Units (Institutional Tender / Campus-wide)</option>
+              <option>Recurring Monthly Consumable Contract</option>
+            </select>
+          </div>
+          <div class="rfq-form-group">
+            <label class="rfq-form-label">Special Technical / Delivery Requirements</label>
+            <textarea class="rfq-form-textarea" placeholder="Include any specific compliance certificates, voltage standards, or delivery timelines needed..."></textarea>
+          </div>
+          <div style="display:flex; justify-content:flex-end; gap:1rem; margin-top:1.5rem;">
+            <button type="button" class="btn-card-quote" style="background:#e2e8f0; color:#334155;" onclick="closeRfqModal()">Cancel</button>
+            <button type="submit" class="btn-cyan-pill" style="padding:10px 22px;">Submit Formal RFQ</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="toast-msg"></div>
+
+  <script type="module" src="/js/main.js"></script>
+  <script>
+    function openRfqModal(productName, division) {
+      const overlay = document.getElementById('rfqModalOverlay');
+      const input = document.getElementById('rfqProductInput');
+      const title = document.getElementById('rfqModalTitle');
+      if (overlay) {
+        if (input) input.value = productName || 'Medical Hardware & Supplies';
+        if (title) title.textContent = `Request Quotation — ${productName || 'Medical Division'}`;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeRfqModal() {
+      const overlay = document.getElementById('rfqModalOverlay');
+      if (overlay) {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function handleRfqSubmit(e) {
+      e.preventDefault();
+      closeRfqModal();
+      const ref = 'MED-' + Math.floor(10000 + Math.random() * 90000);
+      showToast(`RFQ successfully submitted! Our biomedical team will respond within 24h. Reference: ${ref}`);
+    }
+
+    function openSpecAlert(productName) {
+      showToast(`Generating official technical specification sheet for "${productName}"... PDF download started.`);
+    }
+
+    // In-page subnav active link on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.division-subnav__link');
+      let current = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 120;
+        if (window.scrollY >= top) {
+          current = sec.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
