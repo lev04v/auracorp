@@ -311,85 +311,88 @@ function initMobileNav() {
 
 // 6. Double Stairs Preloader Curtain Animation
 function initSkiper10Preloader() {
-  const preloader = document.getElementById('skiper10Preloader');
+  const preloader = document.getElementById('sitePreloader') || document.getElementById('skiper10Preloader') || document.querySelector('.preloader');
   if (!preloader) return;
 
-  const counterEl = document.getElementById('preloaderCounter');
-  const progressFill = document.getElementById('preloaderProgressFill');
-  const centerContent = document.getElementById('preloaderCenterContent');
+  const brandEl = document.getElementById('preloaderBrand');
+  const statusEl = document.getElementById('preloaderStatus');
+  const loaderEl = document.getElementById('preloaderLoader');
+  const imageEl = document.getElementById('preloaderImage');
+  const veilEl = document.getElementById('preloaderVeil');
 
   // Lock scroll during preloading
   document.body.style.overflow = 'hidden';
 
-  let progress = 0;
-  const duration = 1500; // 1.5s smooth loader sequence
-  const startTime = performance.now();
-  let exitStarted = false;
+  // Guaranteed, prominent display duration (2.4s) so every visitor sees the full luxury atmosphere
+  const duration = 2400;
 
-  function updateProgress(currentTime) {
-    if (exitStarted) return;
-    const elapsed = Math.max(0, currentTime - startTime);
-    const rawProgress = Math.max(0, Math.min(elapsed / duration, 1));
-    
-    // Smooth ease-out curve
-    const easeProgress = 1 - Math.pow(1 - rawProgress, 2.5);
-    progress = Math.min(100, Math.max(0, Math.floor(easeProgress * 100)));
-
-    if (counterEl) counterEl.textContent = `${String(progress).padStart(2, '0')}%`;
-    if (progressFill) progressFill.style.width = `${progress}%`;
-
-    if (rawProgress < 1) {
-      requestAnimationFrame(updateProgress);
-    } else {
-      exitStarted = true;
-      if (counterEl) counterEl.textContent = '100%';
-      if (progressFill) progressFill.style.width = '100%';
-      triggerStairsExit();
-    }
-  }
-
-  requestAnimationFrame(updateProgress);
+  const timer = setTimeout(() => {
+    triggerStairsExit();
+  }, duration);
 
   function triggerStairsExit() {
-    // 1. Immediately fade out center content so NO logo or text remains on display
-    if (centerContent) {
-      centerContent.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
-      centerContent.style.opacity = '0';
-      centerContent.style.transform = 'translate(-50%, -50%) scale(0.92)';
-      centerContent.style.visibility = 'hidden';
-      centerContent.style.pointerEvents = 'none';
+    // 1. Smoothly fade out brand emblem & wordmark
+    if (brandEl) {
+      brandEl.style.transition = 'opacity 0.35s ease, transform 0.35s ease, visibility 0.35s ease';
+      brandEl.style.opacity = '0';
+      brandEl.style.transform = 'scale(0.94)';
+      brandEl.style.visibility = 'hidden';
+      brandEl.style.pointerEvents = 'none';
     }
 
-    // 2. Trigger staircase curtains opening wave
+    // 2. Smoothly fade out status dot and sweep bar
+    if (statusEl) {
+      statusEl.style.transition = 'opacity 0.35s ease, visibility 0.35s ease';
+      statusEl.style.opacity = '0';
+      statusEl.style.visibility = 'hidden';
+    }
+    if (loaderEl) {
+      loaderEl.style.transition = 'opacity 0.35s ease, visibility 0.35s ease';
+      loaderEl.style.opacity = '0';
+      loaderEl.style.visibility = 'hidden';
+    }
+
+    // 3. Smoothly fade out background image & veil to reveal the deep navy stair columns
+    if (imageEl) {
+      imageEl.style.transition = 'opacity 0.35s ease, visibility 0.35s ease';
+      imageEl.style.opacity = '0';
+      imageEl.style.visibility = 'hidden';
+    }
+    if (veilEl) {
+      veilEl.style.transition = 'opacity 0.35s ease, visibility 0.35s ease';
+      veilEl.style.opacity = '0';
+      veilEl.style.visibility = 'hidden';
+    }
+
+    // 4. Trigger staircase curtains opening wave (top slides UP, bottom slides DOWN)
     setTimeout(() => {
       preloader.classList.add('animate-exit');
       document.body.style.overflow = '';
 
-      // 3. Complete cleanup when all columns have finished sliding away
+      // 5. Complete cleanup once all columns finish sliding away
       setTimeout(() => {
         preloader.classList.add('finished');
         preloader.style.display = 'none';
         preloader.style.visibility = 'hidden';
         preloader.style.pointerEvents = 'none';
-        // Remove completely from DOM so no logo or element can ever stay on the screen
         if (preloader.parentNode) {
           preloader.parentNode.removeChild(preloader);
         }
-      }, 1250);
+      }, 1300);
     }, 150);
   }
 
   // Safety fallback: ensure page is never locked and preloader is never stuck
   setTimeout(() => {
     document.body.style.overflow = '';
-    const lingeringPreloader = document.getElementById('skiper10Preloader');
+    const lingeringPreloader = document.getElementById('sitePreloader') || document.getElementById('skiper10Preloader') || document.querySelector('.preloader');
     if (lingeringPreloader) {
       lingeringPreloader.style.display = 'none';
       if (lingeringPreloader.parentNode) {
         lingeringPreloader.parentNode.removeChild(lingeringPreloader);
       }
     }
-  }, 4000);
+  }, 5000);
 }
 
 // 7. Interactive Step Path Animation (#c-step-path) — Sticky Sequential Reveal

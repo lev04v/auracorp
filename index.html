@@ -17,12 +17,15 @@
 </head>
 <body>
   <!-- ==========================================================================
-       DOUBLE STAIRS PRELOADER
-       Dual-direction staircase curtain animation with central brand identity
+       AURACORP PRELOADER WITH DOUBLE-STAIRS CURTAIN TRANSITION
        ========================================================================== -->
-  <div class="skiper10-preloader" id="skiper10Preloader" aria-hidden="true">
+  <div class="preloader skiper10-preloader" id="sitePreloader" aria-label="Loading AuraCorp" role="status" aria-live="polite">
+    <!-- Atmospheric Background Image & Veil Layers from Original Preloader -->
+    <div class="preloader__image" id="preloaderImage" aria-hidden="true"></div>
+    <div class="preloader__veil" id="preloaderVeil" aria-hidden="true"></div>
+
     <!-- Top Stair Columns (Slide UP) -->
-    <div class="stair-half top-stairs">
+    <div class="stair-half top-stairs" aria-hidden="true">
       <div class="stair-col" style="--stair-i: 0;"></div>
       <div class="stair-col" style="--stair-i: 1;"></div>
       <div class="stair-col" style="--stair-i: 2;"></div>
@@ -31,23 +34,18 @@
       <div class="stair-col" style="--stair-i: 5;"></div>
     </div>
 
-    <!-- Center Brand & Counter Block -->
-    <div class="preloader-center-content" id="preloaderCenterContent">
-      <div class="preloader-brand-mark" aria-hidden="true"></div>
-      <div class="preloader-title-wrap">
-        <h2 class="preloader-title" style="letter-spacing:0.04em;">AURA<span style="font-weight:400; margin-left:3px;">CORP</span></h2>
-        <p class="preloader-subtitle" style="letter-spacing:0.18em;">HEALTHCARE &amp; WELLNESS</p>
-      </div>
-      <div class="preloader-progress-wrap">
-        <div class="preloader-progress-bar">
-          <div class="preloader-progress-fill" id="preloaderProgressFill"></div>
-        </div>
-        <div class="preloader-counter" id="preloaderCounter">00%</div>
-      </div>
+    <!-- Centered Brand Identity -->
+    <div class="preloader__brand" id="preloaderBrand">
+      <span class="preloader__mark" aria-hidden="true"><i></i></span>
+      <span class="preloader__wordmark">AURA<span>CORP</span><small>HEALTHCARE &amp; WELLNESS</small></span>
     </div>
 
+    <!-- Pinned Status Dot & Sweeping Runner (Original Bottom Geometry) -->
+    <div class="preloader__status" id="preloaderStatus"><span></span>Preparing a healthier tomorrow</div>
+    <div class="preloader__loader" id="preloaderLoader" aria-hidden="true"><i></i></div>
+
     <!-- Bottom Stair Columns (Slide DOWN) -->
-    <div class="stair-half bottom-stairs">
+    <div class="stair-half bottom-stairs" aria-hidden="true">
       <div class="stair-col" style="--stair-i: 0;"></div>
       <div class="stair-col" style="--stair-i: 1;"></div>
       <div class="stair-col" style="--stair-i: 2;"></div>
